@@ -2,7 +2,7 @@
 page 50000 "Course Card"
 {
     PageType = Card;
-    SourceTable = "Insurance Table";
+    SourceTable = "Main Insurance";
     ApplicationArea = Basic;
     UsageCategory = ReportsAndAnalysis;
 
