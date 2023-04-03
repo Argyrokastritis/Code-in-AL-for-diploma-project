@@ -1,0 +1,62 @@
+Για τη δημιουργία του σεναρίου θα χρειστούμε τη δημιουργία των εξής table και pages.
+
+
+2 roles/ role centers (για αργότερα αυτό)
+-Admin
+-Employee
+(Extend User Setup? το κοιτάμε)
+
+new table 50100 Insurance table
+
+0) key: No. - code[30] (auto-assigned by No. Series)
+1) fields: type - enum Insurance Type
+2) Insured Name - text[50]
+3) Insured No. - code[50] (table relation w/ Customer)
+4) Insurance Date - Date
+5) Insured To - Date
+6) Handler no. - code[30] (table relation w/ employee)
+7) Fee - Decimal
+8) Fee type - Option: annual, monthly
+9) Amount - Decimal
+10) Current Claims Amount - Decimal
+11) Max Benefits Limit - Decimal
+12) State- Option: Active, Fulfilled, Canceled
+
++page Page 50100 Insurance Page όπου θα έχει σαν πεδία όλα τα fields του πίνακα table 50100 Insurance table
+
+
+new table 50110 insurance attribute
+
+1) key: id- integer
+2) type- Enum Insurance Type
+3) name - text[30] 
+
+
+new table 50120 Insurance Attribute Map
+
+1) Key: insurance no
+2) Key: attribute ID
+
+
+new table 50130 insurance payment
+
+1) key-insurance no. - code[30]
+2) entry no. - integer
+3) payment type - Option: Annual, Monthly
+4) amount - Decimal
+
++Subpage -> insurance
+
+
+
+new table 50140 insurance claim
+
+1) key- Insurance No. - code[30]
+2) entry no. - integer
+3) Status - Option: pending, accepted, rejected
+4) reviewer - employee no. - code[30] (table relation w/ employee)
+5) claim amount - decimal
+
++Subpage -> insurance
+
+

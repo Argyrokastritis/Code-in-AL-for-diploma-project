@@ -1,0 +1,23 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "BC170",
+            "request": "launch",
+            "type": "al",
+            "environmentType": "OnPrem",
+            "server": "http://DEV2K16",
+            "serverInstance": "BC170",
+            "authentication":"Windows",
+            "port": 27049,
+            //"startupObjectId": 50111,
+            "startupObjectType": "Page",
+            "breakOnError": true,
+            "launchBrowser": false,
+            "enableLongRunningSqlStatements": true,
+            "enableSqlInformationDebugger": true,
+            "schemaUpdateMode": "ForceSync",
+            "tenant": "default"
+        }
+    ]
+}
