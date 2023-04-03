@@ -1,6 +1,5 @@
 table 50020 "Insurance Attribute Map"
 {
-
     fields
     {
         field(1; "Insurance No."; Code[30]) { }
