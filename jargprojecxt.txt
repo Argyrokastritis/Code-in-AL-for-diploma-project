@@ -2,13 +2,20 @@
 
 
 2 roles/ role centers (για αργότερα αυτό)
+
 -Admin
 -Employee
 (Extend User Setup? το κοιτάμε)
 
+
+
 new table 50100 Insurance table
 
-0) key: No. - code[30] (auto-assigned by No. Series)
+Να έχει ένα action ου να του λέει τι attributes έχει
+
+0) key: No. - code[30] (auto-assigned by No. Series) να φτιάξω ένα καινούριο no series και 
+αυτόματα (του συστήματος) και με κώδικα στο on insert
+
 1) fields: type - enum Insurance Type
 2) Insured Name - text[50]
 3) Insured No. - code[50] (table relation w/ Customer)
@@ -27,6 +34,7 @@ new table 50100 Insurance table
 
 new table 50110 insurance attribute
 
+**Το id να μπαίνει αυτόματα και ο χρήστης να βάζει τον τύπο και το όνομα
 1) key: id- integer
 2) type- Enum Insurance Type
 3) name - text[30] 
