@@ -40,14 +40,12 @@ page 50000 "Insurance Page"
             action("Co&mments")
             {
                 ApplicationArea = All;
-                Caption = 'Co&mments';
-                Image = ViewComments;
+                Caption = 'View insurance details';
+                Image = ChartOfAccounts;
                 Promoted = true;
                 PromotedCategory = Category8;
-                RunObject = Page "Sales Comment Sheet";
-                RunPageLink = "Document Type" = FIELD("Document Type"),
-                                  "No." = FIELD("No."),
-                                  "Document Line No." = CONST(0);
+                RunObject = Page "Insurance Attributes Mapping";
+                RunPageLink = "Insurance No." = FIELD("No.");
                 ToolTip = 'View or add comments for the record.';
             }
         }

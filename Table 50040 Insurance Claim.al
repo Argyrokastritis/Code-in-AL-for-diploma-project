@@ -3,7 +3,7 @@ table 50040 "Insurance Claim"
 
     fields
     {
-        field(1; "Insurance No."; Code[30]) { }
+        field(1; "Insurance No."; Code[30]) { TableRelation = Insurance; }
         field(10; "entry no."; Integer) { }
         //{ TableRelation = "Radio Show Type"; }
         field(20; Status; Option)

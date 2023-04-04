@@ -5,6 +5,8 @@ page 50050 "Insurances List"
     SourceTable = "Main Insurance";
     ApplicationArea = Basic;
     UsageCategory = ReportsAndAnalysis;
+    CardPageId = "Insurance Card";
+    Editable = false;
 
     layout
     {
