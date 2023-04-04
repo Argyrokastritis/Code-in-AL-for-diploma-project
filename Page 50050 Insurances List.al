@@ -31,19 +31,19 @@ page 50050 "Insurances List"
     }
 
 
-    trigger OnOpenPage()
-    var
-        Mainins: Record "Main Insurance";
-    begin
+    // trigger OnOpenPage()
+    // var
+    //     Mainins: Record "Main Insurance";
+    // begin
 
-        Rec.FindSet();
+    //     Rec.FindSet();
 
-        if Mainins.FindSet() then begin
-            repeat
-                //syn ta alla
-                Rec."No." := Mainins."No.";
-            until Mainins.Next() = 0;
-        end;
-    end;
+    //     if Mainins.FindSet() then begin
+    //         repeat
+    //             //syn ta alla
+    //             Rec."No." := Mainins."No.";
+    //         until Mainins.Next() = 0;
+    //     end;
+    // end;
 
 }

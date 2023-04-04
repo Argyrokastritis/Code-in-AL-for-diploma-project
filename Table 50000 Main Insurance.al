@@ -44,11 +44,13 @@ table 50000 "Main Insurance"
     var
         NoSeriesMgt: Codeunit NoSeriesManagement;
         noseries: record "No. Series";
+        SalesSetup: Record "Sales & Receivables Setup";
     begin
         if "No." = '' then begin
-            //SalesSetup.Get();
-            //SalesSetup.TestField("Customer Nos.");
-            //NoSeriesMgt.InitSeries(SalesSetup."Customer Nos.", xRec."No. Series", 0D, "No.", "No. Series");
+            SalesSetup.Get();
+            SalesSetup.TestField("Customer Nos.");
+            NoSeriesMgt.InitSeries(SalesSetup."Customer Nos.", '', 0D, "No.", "No. Series");
+
         end;
     end;
 

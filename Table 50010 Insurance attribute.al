@@ -17,4 +17,5 @@ table 50010 "Insurance attribte"
 
     }
 
+
 }
