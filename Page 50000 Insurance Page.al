@@ -1,5 +1,5 @@
 
-page 50000 "Course Card"
+page 50000 "Insurance Page"
 {
     PageType = Card;
     SourceTable = "Main Insurance";

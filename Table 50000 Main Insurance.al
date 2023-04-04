@@ -49,7 +49,7 @@ table 50000 "Main Insurance"
         if "No." = '' then begin
             SalesSetup.Get();
             SalesSetup.TestField("Customer Nos.");
-            NoSeriesMgt.InitSeries(SalesSetup."Customer Nos.", '', 0D, "No.", "No. Series");
+            //NoSeriesMgt.InitSeries(SalesSetup."Customer Nos.", '', 0D, "No.", "No. Series");
 
         end;
     end;
