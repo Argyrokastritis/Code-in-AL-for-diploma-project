@@ -6,6 +6,8 @@ page 50000 "Insurance Page"
     ApplicationArea = Basic;
     UsageCategory = ReportsAndAnalysis;
 
+
+
     layout
     {
         area(content)
@@ -30,4 +32,26 @@ page 50000 "Insurance Page"
             }
         }
     }
+
+    actions
+    {
+        area(Creation)
+        {
+            action("Co&mments")
+            {
+                ApplicationArea = All;
+                Caption = 'Co&mments';
+                Image = ViewComments;
+                Promoted = true;
+                PromotedCategory = Category8;
+                RunObject = Page "Sales Comment Sheet";
+                RunPageLink = "Document Type" = FIELD("Document Type"),
+                                  "No." = FIELD("No."),
+                                  "Document Line No." = CONST(0);
+                ToolTip = 'View or add comments for the record.';
+            }
+        }
+    }
+
+
 }

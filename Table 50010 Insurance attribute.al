@@ -1,4 +1,4 @@
-table 50010 "Insurance attribte"
+table 50010 "Insurance attribute"
 {
 
     fields
