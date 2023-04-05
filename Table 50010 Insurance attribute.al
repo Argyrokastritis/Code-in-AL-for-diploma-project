@@ -16,6 +16,11 @@ table 50010 "Insurance attribute"
         key(PK; id) { }
 
     }
+    fieldgroups
+    {
+        fieldgroup(DropDown; id, type, name)
+        {
 
-
+        }
+    }
 }
