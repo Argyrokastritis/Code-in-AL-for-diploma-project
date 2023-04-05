@@ -10,11 +10,27 @@ page 50040 "Subpage Insurance Claim"
         {
             repeater(Group)
             {
-                field("Insurance No."; "Insurance No.") { ApplicationArea = All; }
-                field("Entry No."; "Entry No.") { ApplicationArea = All; }
-                field(Status; Status) { ApplicationArea = All; }
-                field(reviewer; reviewer) { ApplicationArea = All; }
-                field("claim amount"; "claim amount") { ApplicationArea = All; }
+                field("Insurance No."; "Insurance No.")
+                {
+                    ApplicationArea = All;
+                    Visible = false;
+                }
+                field("Entry No."; "Entry No.")
+                {
+                    ApplicationArea = All;
+                }
+                field(Status; Status)
+                {
+                    ApplicationArea = All;
+                }
+                field(reviewer; reviewer)
+                {
+                    ApplicationArea = All;
+                }
+                field("claim amount"; "claim amount")
+                {
+                    ApplicationArea = All;
+                }
             }
         }
     }

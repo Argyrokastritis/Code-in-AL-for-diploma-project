@@ -1,11 +1,12 @@
 table 50000 "Main Insurance"
 {
+    DataCaptionFields = "No.", "Insured Name";
 
     fields
     {
         field(1; "No."; Code[30])
         {
-
+            Editable = false;
         }
         field(10; "type"; Enum "Insurance type")
         {

@@ -4,7 +4,8 @@ tableextension 50060 "Sales Setup" extends "Sales & Receivables Setup"
     {
         field(50100; "Insurance Nos."; Code[30])
         {
-
+            Caption = 'Insurance No:';
+            TableRelation = "No. Series";
         }
     }
 }

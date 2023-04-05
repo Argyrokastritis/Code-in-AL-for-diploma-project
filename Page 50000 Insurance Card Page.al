@@ -3,8 +3,9 @@ page 50000 "Insurance Card Page"
 {
     PageType = Card;
     SourceTable = "Main Insurance";
-    ApplicationArea = Basic;
+    ApplicationArea = ALL;
     UsageCategory = ReportsAndAnalysis;
+    Caption = 'insurance no';
 
 
 
@@ -13,6 +14,7 @@ page 50000 "Insurance Card Page"
         area(content)
         {
             //get the info from Course Table
+
             group(General)
             {
                 field("No."; "No.") { ApplicationArea = Basic; Importance = Promoted; }
@@ -30,6 +32,25 @@ page 50000 "Insurance Card Page"
                 field("State of Insurance"; "State of Insurance") { ApplicationArea = Basic; Importance = Promoted; }
 
             }
+            group(parts)
+            {
+
+                part("Subpage Insurance Payment"; "Subpage Insurance Payment")
+                {
+                    ApplicationArea = all;
+                    SubPageLink = "Insurance No." = FIELD("No.");
+                    SubPageView = SORTING("Insurance No.");
+
+                }
+
+                part("Subpage Insurance Claim"; "Subpage Insurance Claim")
+                {
+                    ApplicationArea = all;
+                    SubPageLink = "Insurance No." = FIELD("No.");
+                    SubPageView = SORTING("Insurance No.");
+                }
+            }
+
         }
     }
 
@@ -40,10 +61,12 @@ page 50000 "Insurance Card Page"
             action("Co&mments")
             {
                 ApplicationArea = All;
+                Description = 'Press the View insurance details button to see all isurance attributes';
                 Caption = 'View insurance details';
                 Image = ChartOfAccounts;
                 Promoted = true;
-                PromotedCategory = Category8;
+                PromotedIsBig = true;
+                //PromotedCategory = Category7;
                 RunObject = Page "Insurance Attributes Mapping";
                 RunPageLink = "Insurance No." = FIELD("No.");
                 ToolTip = 'View or add comments for the record.';

@@ -2,7 +2,7 @@ page 50030 "Subpage Insurance Payment"
 {
     PageType = ListPart;
     SourceTable = "Insurance payment";
-    AutoSplitKey = true;
+    //AutoSplitKey = true;
     DelayedInsert = true;
     layout
     {
@@ -10,12 +10,22 @@ page 50030 "Subpage Insurance Payment"
         {
             repeater(Group)
             {
-                field("Insurance No."; "Insurance No.") { ApplicationArea = All; }
+                field("Insurance No."; "Insurance No.")
+                {
+                    ApplicationArea = All;
+                    Visible = false;
+                }
                 field("Entry No."; "Entry No.")
                 {
                 }
-                field("Payment type"; "Payment type") { ApplicationArea = All; }
-                field(amount; amount) { ApplicationArea = All; }
+                field("Payment type"; "Payment type")
+                {
+                    ApplicationArea = All;
+                }
+                field(amount; amount)
+                {
+                    ApplicationArea = All;
+                }
             }
         }
     }
