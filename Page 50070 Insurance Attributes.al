@@ -21,6 +21,7 @@ page 50070 "Insurance Attributes"
 
                 field("type"; "type") { ApplicationArea = Basic; Importance = Promoted; }
                 field("name"; "name") { ApplicationArea = Basic; Importance = Promoted; }
+                field("Description"; "Description") { ApplicationArea = ALL; }
             }
 
 
