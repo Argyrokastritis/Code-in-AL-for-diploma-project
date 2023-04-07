@@ -5,7 +5,7 @@ page 50000 "Insurance Card Page"
     SourceTable = "Main Insurance";
     ApplicationArea = ALL;
     UsageCategory = ReportsAndAnalysis;
-    Caption = 'insurance no';
+    Caption = 'Insurance Card Page';
 
 
 
@@ -13,17 +13,31 @@ page 50000 "Insurance Card Page"
     {
         area(content)
         {
-            //get the info from Course Table
+
 
             group(General)
             {
                 field("No."; "No.") { ApplicationArea = Basic; Importance = Promoted; }
                 field("type"; "type") { ApplicationArea = Basic; Importance = Promoted; }
+                field("Insured No."; "Insured No.")
+                {
+                    ApplicationArea = Basic;
+
+                    trigger OnValidate()
+                    var
+                        CustomerInfo: Record Customer;
+                    begin
+                        //autocompletes the name by only choosing the no
+                        CustomerInfo.get(rec."Insured No.");
+                        //Message('%1', "Insured No.");
+                        //Message('%1', "Insured Name");
+                        "Insured Name" := CustomerInfo.Name;
+                    end;
+
+                }
                 field("Insured Name"; "Insured Name") { ApplicationArea = Basic; Importance = Promoted; }
-                field("Insured No."; "Insured No.") { ApplicationArea = Basic; }
                 field("Insurance Date"; "Insurance Date") { ApplicationArea = Basic; }
                 field("Insured To"; "Insured To") { ApplicationArea = Basic; }
-                //Question 5 of case
                 field("Handler no."; "Handler no.") { ApplicationArea = Basic; }
                 field("Fee"; "Fee") { ApplicationArea = Basic; Importance = Promoted; }
                 field("Amount"; "Amount") { ApplicationArea = Basic; Importance = Promoted; }

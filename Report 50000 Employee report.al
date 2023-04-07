@@ -1,8 +1,8 @@
-report 50000 "Employee report"
+report 50000 "Employee insurances report"
 {
 
     DefaultLayout = RDLC;
-    RDLCLayout = './Employee report.rdl';
+    RDLCLayout = './Employee insurances report.rdl';
     UsageCategory = ReportsAndAnalysis;
     ApplicationArea = Basic;
 

@@ -26,21 +26,25 @@ table 50020 "Insurance Attribute Map"
     trigger OnInsert()
     var
         InsuranceAttribute: Record "Insurance Attribute";
+
+        //The mainInsurance is the record from Insurance Card page which is the first thing you open
         MainInsurance: Record "Main insurance";
 
     begin
 
+        MainInsurance.get(rec."Insurance No.");
+
         "InsuranceAttribute".get(rec."attribute ID");
-        "InsuranceAttribute".SetRange(type);
+        //"MainInsurance".SetRange(type);
 
-        // Message('InsuranceAttribute type = %1', "InsuranceAttribute".type);
-        // Message('InsuranceAttribute = %1', "InsuranceAttribute".id);
-        // Message('attribute ID = %1', "attribute ID");
+        Message('InsuranceAttribute type = %1', "InsuranceAttribute".type);
+        Message('InsuranceAttribute = %1', "InsuranceAttribute".id);
+        Message('attribute ID = %1', "attribute ID");
 
-        if (MainInsurance.type = "InsuranceAttribute".type) then begin
+        if (MainInsurance.type <> "InsuranceAttribute".type) then begin
 
-            // Message('%1', "InsuranceAttribute".id);
-            // Message('%1', "attribute ID");
+            Message('%1', "InsuranceAttribute".id);
+            Message('%1', "attribute ID");
 
             Error('This insurance is not acceptable give a type as the one in the card that you are in');
         end;

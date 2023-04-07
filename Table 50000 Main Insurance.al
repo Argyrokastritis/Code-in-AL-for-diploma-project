@@ -12,7 +12,7 @@ table 50000 "Main Insurance"
         {
 
         }
-        field(20; "Insured Name"; Text[50]) { }
+        field(20; "Insured Name"; Text[50]) { Editable = false; }
         field(40; "Insured No."; Code[20])
         {
             TableRelation = Customer."No.";
@@ -54,6 +54,8 @@ table 50000 "Main Insurance"
 
         end;
     end;
+
+
 
 
 

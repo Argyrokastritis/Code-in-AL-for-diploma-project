@@ -6,7 +6,7 @@ page 50050 "Insurances List"
     ApplicationArea = Basic;
     UsageCategory = ReportsAndAnalysis;
     CardPageId = "Insurance Card";
-    Editable = false;
+    Editable = true;
 
     layout
     {
