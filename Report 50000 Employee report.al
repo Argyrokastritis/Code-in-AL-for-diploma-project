@@ -220,7 +220,7 @@ report 50000 "Employee insurances report"
             column(Current_Claims_Amount; "Current Claims Amount") { }
             column(Max_Benefits_Limit; "Max Benefits Limit") { }
             column(State_of_Insurance; "State of Insurance") { }
-            column(Comment; Comments_Of_insurance.Comment) { }
+            //column(Comment; Comments_Of_insurance.Comment) { }
 
             //Info of Insurance CPT's
             column(Thl_Cpt; Thl_Cpt) { }
@@ -239,6 +239,25 @@ report 50000 "Employee insurances report"
             column(State_of_InsuranceCPT; "State_of_InsuranceCPT") { }
             column(UserComment; "UserComment") { }
 
+            dataitem("Comments of insurance"; "Comments of insurance")
+            {
+                DataItemLink = "Insurance No." = FIELD("No.");
+                DataItemTableView = SORTING("Insurance No.", "Comment no.");
+                //PrintOnlyIfDetail = true;
+
+                column(Insurance_No; "Insurance No.") { }
+                column(Comment_no; "Comment no.") { }
+
+                column(Comment; Comment) { }
+
+
+            }
+
+
+            //trigger OnAfterGetRecord()
+            // begin
+
+            // end;
 
         }
     }
@@ -327,7 +346,7 @@ report 50000 "Employee insurances report"
         SxolioCpt: TextConst ENU = 'For any dispute exclusively competent is agreed as is the law courts of Athens', ENG = 'Για οποιαδήποτε διαφορά αποκλειστικά αρμόδια συμφωνείται όπως είναι τα δικαστήρια Αθηνών ';
         AtheoritaCpt: TextConst ENU = 'ΑΘΕΩΡΗΤΑ ΒΑΣΕΙ ΤΗΣ Α.Υ.Ο. ΠΟΛ. 1083/2003', ENG = 'ΑΘΕΩΡΗΤΑ ΒΑΣΕΙ ΤΗΣ Α.Υ.Ο. ΠΟΛ. 1083/2003';
         AmpCpt: TextConst ENU = 'ΑΜΠ: 5332', ENG = 'ΑΜΠ: 5332';
-        ParatiriseisCpt: TextConst ENU = 'COMMENTS', ENG = 'ΠΑΡΑΤΗΡΗΣΕΙΣ';
+        ParatiriseisCpt: TextConst ENU = 'Comments', ENG = 'ΠΑΡΑΤΗΡΗΣΕΙΣ';
         SynolikiPosotitaCpt: TextConst ENU = 'TOTAL QUANTITY:', ENG = 'ΣΥΝΟΛΙΚΗ ΠΟΣΟΣΤΗΤΑ:';
         EpivarinseisCpt: TextConst ENU = 'CHARGES', ENG = 'ΕΠΙΒΑΡΥΝΣΕΙΣ';
         GrandTotalCpt: TextConst ENU = 'GRAND TOTAL', ENG = 'ΓΕΝΙΚΟ ΣΥΝΟΛΟ';

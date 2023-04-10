@@ -583,13 +583,17 @@
                   <KeepWithGroup>After</KeepWithGroup>
                 </TablixMember>
                 <TablixMember>
-                  <Group Name="Details" />
+                  <Group Name="Details">
+                    <GroupExpressions>
+                      <GroupExpression>=Fields!No.Value</GroupExpression>
+                    </GroupExpressions>
+                  </Group>
                 </TablixMember>
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DataSet_Result</DataSetName>
-            <Top>2.11333in</Top>
-            <Left>0.155in</Left>
+            <Top>1.89458in</Top>
+            <Left>0.14509in</Left>
             <Height>0.5in</Height>
             <Width>8.24529in</Width>
             <ZIndex>7</ZIndex>
@@ -1011,12 +1015,16 @@
                   <KeepWithGroup>After</KeepWithGroup>
                 </TablixMember>
                 <TablixMember>
-                  <Group Name="Details1" />
+                  <Group Name="Details1">
+                    <GroupExpressions>
+                      <GroupExpression>=Fields!No.Value</GroupExpression>
+                    </GroupExpressions>
+                  </Group>
                 </TablixMember>
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DataSet_Result</DataSetName>
-            <Top>9.73349cm</Top>
+            <Top>8.18099cm</Top>
             <Left>0.3937cm</Left>
             <Height>1.2cm</Height>
             <Width>20.94306cm</Width>
@@ -1047,8 +1055,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox40</rd:DefaultName>
-            <Top>4.30953cm</Top>
-            <Left>8.86913cm</Left>
+            <Top>3.7539cm</Top>
+            <Left>8.84397cm</Left>
             <Height>0.6cm</Height>
             <Width>4.32563cm</Width>
             <ZIndex>9</ZIndex>
@@ -1082,7 +1090,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox41</rd:DefaultName>
-            <Top>8.78099cm</Top>
+            <Top>7.22849cm</Top>
             <Left>8.46349cm</Left>
             <Height>0.6cm</Height>
             <Width>5.2265cm</Width>
@@ -1584,12 +1592,16 @@
                   <KeepWithGroup>After</KeepWithGroup>
                 </TablixMember>
                 <TablixMember>
-                  <Group Name="Details2" />
+                  <Group Name="Details2">
+                    <GroupExpressions>
+                      <GroupExpression>=Fields!No.Value</GroupExpression>
+                    </GroupExpressions>
+                  </Group>
                 </TablixMember>
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DataSet_Result</DataSetName>
-            <Top>14.85787cm</Top>
+            <Top>12.1062cm</Top>
             <Left>0.3937cm</Left>
             <Height>1.2cm</Height>
             <Width>20.94306cm</Width>
@@ -1622,7 +1634,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox54</rd:DefaultName>
-            <Top>13.34974cm</Top>
+            <Top>10.59807cm</Top>
             <Left>7.80203cm</Left>
             <Height>0.83812cm</Height>
             <Width>7.23187cm</Width>
@@ -1744,7 +1756,7 @@
                                   <Value>=Fields!No.Value</Value>
                                   <Style>
                                     <FontFamily>Segoe UI</FontFamily>
-                                    <FontSize>9pt</FontSize>
+                                    <FontSize>8pt</FontSize>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1765,6 +1777,7 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -1823,7 +1836,7 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DataSet_Result</DataSetName>
-            <Top>18.48543cm</Top>
+            <Top>15.62793cm</Top>
             <Left>0.49531cm</Left>
             <Height>1.2cm</Height>
             <Width>10.07596cm</Width>
@@ -1853,7 +1866,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox20</rd:DefaultName>
-            <Top>17.45933cm</Top>
+            <Top>14.60183cm</Top>
             <Left>1.24206cm</Left>
             <Height>0.6cm</Height>
             <Width>8.37671cm</Width>
@@ -1869,7 +1882,7 @@
             </Style>
           </Textbox>
         </ReportItems>
-        <Height>21.21958cm</Height>
+        <Height>17.91229cm</Height>
         <Style />
       </Body>
       <Width>22.23412cm</Width>
@@ -2231,9 +2244,6 @@ End Function
         <Field Name="State_of_Insurance">
           <DataField>State_of_Insurance</DataField>
         </Field>
-        <Field Name="Comment">
-          <DataField>Comment</DataField>
-        </Field>
         <Field Name="Thl_Cpt">
           <DataField>Thl_Cpt</DataField>
         </Field>
@@ -2278,6 +2288,15 @@ End Function
         </Field>
         <Field Name="UserComment">
           <DataField>UserComment</DataField>
+        </Field>
+        <Field Name="Insurance_No">
+          <DataField>Insurance_No</DataField>
+        </Field>
+        <Field Name="Comment_no">
+          <DataField>Comment_no</DataField>
+        </Field>
+        <Field Name="Comment">
+          <DataField>Comment</DataField>
         </Field>
       </Fields>
       <Query>
