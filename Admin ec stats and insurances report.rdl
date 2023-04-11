@@ -8,7 +8,7 @@
         <ConnectString />
       </ConnectionProperties>
       <rd:SecurityType>None</rd:SecurityType>
-      <rd:DataSourceID>afbc3304-052c-4dd0-84b1-0d204c514720</rd:DataSourceID>
+      <rd:DataSourceID>20c9d2a8-23fb-4f1e-a6f5-cfca612cd1d5</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <ReportSections>
@@ -20,7 +20,7 @@
             <Value>=First(Fields!CompanyPic.Value, "DataSet_Result")</Value>
             <MIMEType>image/bmp</MIMEType>
             <Sizing>Fit</Sizing>
-            <Left>0.33202cm</Left>
+            <Left>0.97104cm</Left>
             <Height>1.214in</Height>
             <Width>1.66542in</Width>
             <Style>
@@ -52,7 +52,7 @@
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
             <Top>0.08208in</Top>
-            <Left>2.14684in</Left>
+            <Left>2.39842in</Left>
             <Height>0.17708in</Height>
             <Width>4.48389in</Width>
             <ZIndex>1</ZIndex>
@@ -89,7 +89,7 @@
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
             <Top>0.25916in</Top>
-            <Left>2.14683in</Left>
+            <Left>2.39841in</Left>
             <Height>0.17708in</Height>
             <Width>4.48389in</Width>
             <ZIndex>2</ZIndex>
@@ -126,7 +126,7 @@
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
             <Top>0.47791in</Top>
-            <Left>2.14683in</Left>
+            <Left>2.39841in</Left>
             <Height>0.17708in</Height>
             <Width>4.48389in</Width>
             <ZIndex>3</ZIndex>
@@ -163,7 +163,7 @@
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
             <Top>0.66888in</Top>
-            <Left>2.14684in</Left>
+            <Left>2.39842in</Left>
             <Height>0.17708in</Height>
             <Width>4.48389in</Width>
             <ZIndex>4</ZIndex>
@@ -200,7 +200,7 @@
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
             <Top>0.84596in</Top>
-            <Left>2.14683in</Left>
+            <Left>2.39841in</Left>
             <Height>0.17708in</Height>
             <Width>4.48389in</Width>
             <ZIndex>5</ZIndex>
@@ -237,7 +237,7 @@
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
             <Top>1.03692in</Top>
-            <Left>2.14683in</Left>
+            <Left>2.39841in</Left>
             <Height>0.17708in</Height>
             <Width>4.48389in</Width>
             <ZIndex>6</ZIndex>
@@ -592,8 +592,8 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DataSet_Result</DataSetName>
-            <Top>1.89458in</Top>
-            <Left>0.14509in</Left>
+            <Top>4.87614in</Top>
+            <Left>0in</Left>
             <Height>0.5in</Height>
             <Width>8.24529in</Width>
             <ZIndex>7</ZIndex>
@@ -749,7 +749,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!FeeCPT.Value</Value>
+                                  <Value>=Fields!Fee_CPT.Value</Value>
                                   <Style>
                                     <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -1024,8 +1024,8 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DataSet_Result</DataSetName>
-            <Top>8.18099cm</Top>
-            <Left>0.3937cm</Left>
+            <Top>15.75414cm</Top>
+            <Left>0.02517cm</Left>
             <Height>1.2cm</Height>
             <Width>20.94306cm</Width>
             <ZIndex>8</ZIndex>
@@ -1055,8 +1055,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox40</rd:DefaultName>
-            <Top>3.7539cm</Top>
-            <Left>8.84397cm</Left>
+            <Top>11.32705cm</Top>
+            <Left>8.47544cm</Left>
             <Height>0.6cm</Height>
             <Width>4.32563cm</Width>
             <ZIndex>9</ZIndex>
@@ -1090,8 +1090,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox41</rd:DefaultName>
-            <Top>7.22849cm</Top>
-            <Left>8.46349cm</Left>
+            <Top>14.80164cm</Top>
+            <Left>8.09496cm</Left>
             <Height>0.6cm</Height>
             <Width>5.2265cm</Width>
             <ZIndex>10</ZIndex>
@@ -1178,7 +1178,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!FeeCPT.Value</Value>
+                                  <Value>=Fields!Fee_CPT.Value</Value>
                                   <Style>
                                     <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -1292,7 +1292,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!Max_Benefits_Limit.Value</Value>
+                                  <Value>=Fields!Max_Benefits_LimitCPT.Value</Value>
                                   <Style>
                                     <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -1601,8 +1601,8 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DataSet_Result</DataSetName>
-            <Top>12.1062cm</Top>
-            <Left>0.3937cm</Left>
+            <Top>19.67935cm</Top>
+            <Left>0.02517cm</Left>
             <Height>1.2cm</Height>
             <Width>20.94306cm</Width>
             <ZIndex>11</ZIndex>
@@ -1634,8 +1634,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox54</rd:DefaultName>
-            <Top>10.59807cm</Top>
-            <Left>7.80203cm</Left>
+            <Top>18.17122cm</Top>
+            <Left>7.4335cm</Left>
             <Height>0.83812cm</Height>
             <Width>7.23187cm</Width>
             <ZIndex>12</ZIndex>
@@ -1835,8 +1835,7 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DataSet_Result</DataSetName>
-            <Top>15.62793cm</Top>
-            <Left>0.3937cm</Left>
+            <Top>25.3442cm</Top>
             <Height>1.2cm</Height>
             <Width>10.07596cm</Width>
             <ZIndex>13</ZIndex>
@@ -1865,8 +1864,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox20</rd:DefaultName>
-            <Top>14.60183cm</Top>
-            <Left>1.24206cm</Left>
+            <Top>24.3181cm</Top>
+            <Left>0.84836cm</Left>
             <Height>0.6cm</Height>
             <Width>8.37671cm</Width>
             <ZIndex>14</ZIndex>
@@ -1880,11 +1879,390 @@
               <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
+          <Textbox Name="Textbox62">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Economical stats of the Company</Value>
+                    <Style>
+                      <FontFamily>Segoe UI</FontFamily>
+                      <FontSize>12pt</FontSize>
+                      <FontWeight>Bold</FontWeight>
+                      <Color>Tomato</Color>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox62</rd:DefaultName>
+            <Top>1.51958in</Top>
+            <Left>2.92658in</Left>
+            <Height>0.25in</Height>
+            <Width>2.70697in</Width>
+            <ZIndex>15</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Tablix Name="Tablix1">
+            <TablixBody>
+              <TablixColumns>
+                <TablixColumn>
+                  <Width>2.06972in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1.70924in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>2.26444in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>2.19198in</Width>
+                </TablixColumn>
+              </TablixColumns>
+              <TablixRows>
+                <TablixRow>
+                  <Height>0.25in</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox7">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!Total_Company_earnings_CPT.Value</Value>
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <Color>White</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox7</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>DarkGreen</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox9">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!Total_Expected_earnings_CPT.Value</Value>
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <Color>White</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox9</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>DarkGreen</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox11">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!Total_Company_Expenses_CPT.Value</Value>
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <Color>White</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox11</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>DarkGreen</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox8">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!Total_Max_Expected_Company_Expenses_CPT.Value</Value>
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <Color>White</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox8</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>DarkGreen</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+                <TablixRow>
+                  <Height>0.25in</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Total_Company_earnings">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=First(Fields!Total_Company_earnings.Value, "DataSet_Result")</Value>
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Total_Company_earnings</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Total_Expected_earnings">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=First(Fields!Total_Expected_earnings.Value, "DataSet_Result")</Value>
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Total_Expected_earnings</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <rd:Selected>true</rd:Selected>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Total_Company_Expenses">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!Total_Company_Expenses.Value</Value>
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Total_Company_Expenses</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Total_Max_Expected_Company_Expenses">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!Total_Max_Expected_Company_Expenses.Value</Value>
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Total_Max_Expected_Company_Expenses</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+              </TablixRows>
+            </TablixBody>
+            <TablixColumnHierarchy>
+              <TablixMembers>
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+              </TablixMembers>
+            </TablixColumnHierarchy>
+            <TablixRowHierarchy>
+              <TablixMembers>
+                <TablixMember />
+                <TablixMember />
+              </TablixMembers>
+            </TablixRowHierarchy>
+            <DataSetName>DataSet_Result</DataSetName>
+            <Top>2.04042in</Top>
+            <Left>0.00991in</Left>
+            <Height>0.5in</Height>
+            <Width>8.23538in</Width>
+            <ZIndex>16</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Tablix>
         </ReportItems>
-        <Height>17.91229cm</Height>
+        <Height>29.07772cm</Height>
         <Style />
       </Body>
-      <Width>22.23412cm</Width>
+      <Width>20.99338cm</Width>
       <Page>
         <PageHeight>27.94cm</PageHeight>
         <PageWidth>21.59cm</PageWidth>
@@ -2015,6 +2393,30 @@ End Function
   <DataSets>
     <DataSet Name="DataSet_Result">
       <Fields>
+        <Field Name="Total_Company_earnings_CPT">
+          <DataField>Total_Company_earnings_CPT</DataField>
+        </Field>
+        <Field Name="Total_Expected_earnings_CPT">
+          <DataField>Total_Expected_earnings_CPT</DataField>
+        </Field>
+        <Field Name="Total_Company_Expenses_CPT">
+          <DataField>Total_Company_Expenses_CPT</DataField>
+        </Field>
+        <Field Name="Total_Max_Expected_Company_Expenses_CPT">
+          <DataField>Total_Max_Expected_Company_Expenses_CPT</DataField>
+        </Field>
+        <Field Name="Total_Company_earnings">
+          <DataField>Total_Company_earnings</DataField>
+        </Field>
+        <Field Name="Total_Expected_earnings">
+          <DataField>Total_Expected_earnings</DataField>
+        </Field>
+        <Field Name="Total_Company_Expenses">
+          <DataField>Total_Company_Expenses</DataField>
+        </Field>
+        <Field Name="Total_Max_Expected_Company_Expenses">
+          <DataField>Total_Max_Expected_Company_Expenses</DataField>
+        </Field>
         <Field Name="CompanyPic">
           <DataField>CompanyPic</DataField>
         </Field>
@@ -2270,8 +2672,8 @@ End Function
         <Field Name="Handler_noCPT">
           <DataField>Handler_noCPT</DataField>
         </Field>
-        <Field Name="FeeCPT">
-          <DataField>FeeCPT</DataField>
+        <Field Name="Fee_CPT">
+          <DataField>Fee_CPT</DataField>
         </Field>
         <Field Name="AmountCPT">
           <DataField>AmountCPT</DataField>

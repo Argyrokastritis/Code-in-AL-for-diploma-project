@@ -5,7 +5,7 @@ page 50050 "Insurances List"
     SourceTable = "Main Insurance";
     ApplicationArea = Basic;
     UsageCategory = ReportsAndAnalysis;
-    CardPageId = "Insurance Card";
+    CardPageId = "Insurance Card Page";
     Editable = true;
 
     layout
@@ -32,20 +32,5 @@ page 50050 "Insurances List"
         }
     }
 
-
-    // trigger OnOpenPage()
-    // var
-    //     Mainins: Record "Main Insurance";
-    // begin
-
-    //     Rec.FindSet();
-
-    //     if Mainins.FindSet() then begin
-    //         repeat
-    //             //syn ta alla
-    //             Rec."No." := Mainins."No.";
-    //         until Mainins.Next() = 0;
-    //     end;
-    // end;
 
 }

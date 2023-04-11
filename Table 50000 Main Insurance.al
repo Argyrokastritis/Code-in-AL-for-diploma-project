@@ -2,6 +2,7 @@ table 50000 "Main Insurance"
 {
     DataCaptionFields = "No.", "Insured Name";
 
+
     fields
     {
         field(1; "No."; Code[30])
@@ -12,21 +13,42 @@ table 50000 "Main Insurance"
         {
 
         }
-        field(20; "Insured Name"; Text[50]) { Editable = false; }
+        field(20; "Insured Name"; Text[50])
+        {
+            Editable = false;
+        }
         field(40; "Insured No."; Code[20])
         {
             TableRelation = Customer."No.";
         }
-        field(50; "Insurance Date"; Date) { }
-        field(60; "Insured To"; Date) { }
+        field(50; "Insurance Date"; Date)
+        {
+
+        }
+        field(60; "Insured To"; Date)
+        {
+
+        }
         field(700; "Handler no."; Code[30])
         {
             TableRelation = Employee."No.";
         }
-        field(80; "Fee"; Decimal) { }
-        field(90; "Amount"; Decimal) { }
-        field(100; "Current Claims Amount"; Decimal) { }
-        field(110; "Max Benefits Limit"; Decimal) { }
+        field(80; "Fee"; Decimal)
+        {
+
+        }
+        field(90; "Amount"; Decimal)
+        {
+
+        }
+        field(100; "Current Claims Amount"; Decimal)
+        {
+
+        }
+        field(110; "Max Benefits Limit"; Decimal)
+        {
+
+        }
 
         field(120; "State of Insurance"; Option)
         {
@@ -47,12 +69,23 @@ table 50000 "Main Insurance"
         noseries: record "No. Series";
         SalesandReceivablesSetup: Record "Sales & Receivables Setup";
     begin
+        /*
         if "No." = '' then begin
             SalesandReceivablesSetup.Get();
             SalesandReceivablesSetup.TestField("Insurance Nos.");
             NoSeriesMgt.InitSeries(SalesandReceivablesSetup."Insurance Nos.", '', 0D, "No.", SalesandReceivablesSetup."Insurance Nos.");
 
+
         end;
+*/
+    end;
+
+    //When a record is deleted delete the payment and claim insurance
+    trigger OnDelete()
+    var
+        "insurance payment": record "Insurance Payment";
+    begin
+
     end;
 
 

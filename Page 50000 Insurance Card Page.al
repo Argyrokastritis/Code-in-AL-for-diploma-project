@@ -17,9 +17,17 @@ page 50000 "Insurance Card Page"
 
             group(General)
             {
-                field("No."; "No.") { ApplicationArea = Basic; Importance = Promoted; }
-                field("type"; "type") { ApplicationArea = Basic; Importance = Promoted; }
-                field("Insured No."; "Insured No.")
+                field("No."; Rec."No.")
+                {
+                    ApplicationArea = Basic;
+                    Importance = Promoted;
+                }
+                field("type"; Rec."type")
+                {
+                    ApplicationArea = Basic;
+                    Importance = Promoted;
+                }
+                field("Insured No."; Rec."Insured No.")
                 {
                     ApplicationArea = Basic;
 
@@ -28,10 +36,10 @@ page 50000 "Insurance Card Page"
                         CustomerInfo: Record Customer;
                     begin
                         //autocompletes the name by only choosing the no
-                        CustomerInfo.get(rec."Insured No.");
+                        CustomerInfo.get(Rec."Insured No.");
                         //Message('%1', "Insured No.");
                         //Message('%1', "Insured Name");
-                        "Insured Name" := CustomerInfo.Name;
+                        Rec."Insured Name" := CustomerInfo.Name;
                     end;
 
                 }
@@ -63,6 +71,7 @@ page 50000 "Insurance Card Page"
                     SubPageLink = "Insurance No." = FIELD("No.");
                     SubPageView = SORTING("Insurance No.");
                 }
+
             }
 
         }

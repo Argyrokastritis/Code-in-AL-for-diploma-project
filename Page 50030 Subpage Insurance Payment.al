@@ -17,6 +17,7 @@ page 50030 "Subpage Insurance Payment"
                 }
                 field("Entry No."; "Entry No.")
                 {
+
                 }
                 field("Payment type"; "Payment type")
                 {
@@ -26,6 +27,12 @@ page 50030 "Subpage Insurance Payment"
                 {
                     ApplicationArea = All;
                 }
+                field("Insurance Date"; "Insurance Date")
+                {
+                    ApplicationArea = All;
+                    Visible = true;
+                }
+
             }
         }
     }
@@ -41,8 +48,16 @@ page 50030 "Subpage Insurance Payment"
                 trigger OnAction();
                 begin
 
+
                 end;
             }
         }
     }
+
+    trigger OnNewRecord(BelowxRec: Boolean)
+    begin
+        Rec."entry no." := Rec.NextEntryNo();
+    end;
+
+
 }
