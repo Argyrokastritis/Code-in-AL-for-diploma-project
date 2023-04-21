@@ -37,14 +37,14 @@ table 50020 "Insurance Attribute Map"
         "InsuranceAttribute".get(rec."attribute ID");
         //"MainInsurance".SetRange(type);
 
-        Message('InsuranceAttribute type = %1', "InsuranceAttribute".type);
-        Message('InsuranceAttribute = %1', "InsuranceAttribute".id);
-        Message('attribute ID = %1', "attribute ID");
+        //Message('InsuranceAttribute type = %1', "InsuranceAttribute".type);
+        //Message('InsuranceAttribute = %1', "InsuranceAttribute".id);
+        //Message('attribute ID = %1', "attribute ID");
 
         if (MainInsurance.type <> "InsuranceAttribute".type) then begin
 
-            Message('%1', "InsuranceAttribute".id);
-            Message('%1', "attribute ID");
+            //Message('%1', "InsuranceAttribute".id);
+            //Message('%1', "attribute ID");
 
             Error('This insurance is not acceptable give a type as the one in the card that you are in');
         end;

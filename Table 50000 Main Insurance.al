@@ -69,15 +69,13 @@ table 50000 "Main Insurance"
         noseries: record "No. Series";
         SalesandReceivablesSetup: Record "Sales & Receivables Setup";
     begin
-        /*
-        if "No." = '' then begin
+
+        If "No." = '' then begin
             SalesandReceivablesSetup.Get();
             SalesandReceivablesSetup.TestField("Insurance Nos.");
             NoSeriesMgt.InitSeries(SalesandReceivablesSetup."Insurance Nos.", '', 0D, "No.", SalesandReceivablesSetup."Insurance Nos.");
-
-
         end;
-*/
+
     end;
 
     //When a record is deleted delete the payment and claim insurance

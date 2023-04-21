@@ -43,15 +43,48 @@ page 50000 "Insurance Card Page"
                     end;
 
                 }
-                field("Insured Name"; "Insured Name") { ApplicationArea = Basic; Importance = Promoted; }
-                field("Insurance Date"; "Insurance Date") { ApplicationArea = Basic; }
-                field("Insured To"; "Insured To") { ApplicationArea = Basic; }
-                field("Handler no."; "Handler no.") { ApplicationArea = Basic; }
-                field("Fee"; "Fee") { ApplicationArea = Basic; Importance = Promoted; }
-                field("Amount"; "Amount") { ApplicationArea = Basic; Importance = Promoted; }
-                field("Current Claims Amount"; "Current Claims Amount") { ApplicationArea = Basic; Importance = Promoted; }
-                field("Max Benefits Limit"; "Max Benefits Limit") { ApplicationArea = Basic; Importance = Promoted; }
-                field("State of Insurance"; "State of Insurance") { ApplicationArea = Basic; Importance = Promoted; }
+                field("Insured Name"; "Insured Name")
+                {
+                    ApplicationArea = Basic;
+                    Importance = Promoted;
+                }
+                field("Insurance Date"; "Insurance Date")
+                {
+                    ApplicationArea = Basic;
+                }
+                field("Insured To"; "Insured To")
+                {
+                    ApplicationArea = Basic;
+                }
+                field("Handler no."; "Handler no.")
+                {
+                    ApplicationArea = Basic;
+                }
+                field("Fee"; "Fee")
+                {
+                    ApplicationArea = Basic;
+                    Importance = Promoted;
+                }
+                field("Amount"; "Amount")
+                {
+                    ApplicationArea = Basic;
+                    Importance = Promoted;
+                }
+                field("Current Claims Amount"; "Current Claims Amount")
+                {
+                    ApplicationArea = Basic;
+                    Importance = Promoted;
+                }
+                field("Max Benefits Limit"; "Max Benefits Limit")
+                {
+                    ApplicationArea = Basic;
+                    Importance = Promoted;
+                }
+                field("State of Insurance"; "State of Insurance")
+                {
+                    ApplicationArea = Basic;
+                    Importance = Promoted;
+                }
 
             }
             group(parts)
