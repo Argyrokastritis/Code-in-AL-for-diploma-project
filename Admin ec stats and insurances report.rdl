@@ -593,9 +593,9 @@
             </TablixRowHierarchy>
             <DataSetName>DataSet_Result</DataSetName>
             <Top>4.87614in</Top>
-            <Left>0in</Left>
+            <Left>0.14853in</Left>
             <Height>0.5in</Height>
-            <Width>8.24529in</Width>
+            <Width>8.2453in</Width>
             <ZIndex>7</ZIndex>
             <Style>
               <Border>
@@ -1025,7 +1025,7 @@
             </TablixRowHierarchy>
             <DataSetName>DataSet_Result</DataSetName>
             <Top>15.75414cm</Top>
-            <Left>0.02517cm</Left>
+            <Left>0.37725cm</Left>
             <Height>1.2cm</Height>
             <Width>20.94306cm</Width>
             <ZIndex>8</ZIndex>
@@ -1602,7 +1602,7 @@
             </TablixRowHierarchy>
             <DataSetName>DataSet_Result</DataSetName>
             <Top>19.67935cm</Top>
-            <Left>0.02517cm</Left>
+            <Left>0.37725cm</Left>
             <Height>1.2cm</Height>
             <Width>20.94306cm</Width>
             <ZIndex>11</ZIndex>
@@ -1653,10 +1653,10 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>3.79242cm</Width>
+                  <Width>3.71734cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>6.28354cm</Width>
+                  <Width>6.20846cm</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -1835,9 +1835,10 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DataSet_Result</DataSetName>
-            <Top>25.3442cm</Top>
+            <Top>24.65628cm</Top>
+            <Left>0.37725cm</Left>
             <Height>1.2cm</Height>
-            <Width>10.07596cm</Width>
+            <Width>9.92579cm</Width>
             <ZIndex>13</ZIndex>
             <Style>
               <Border>
@@ -1864,8 +1865,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox20</rd:DefaultName>
-            <Top>24.3181cm</Top>
-            <Left>0.84836cm</Left>
+            <Top>23.63018cm</Top>
+            <Left>0.97104cm</Left>
             <Height>0.6cm</Height>
             <Width>8.37671cm</Width>
             <ZIndex>14</ZIndex>
@@ -1918,16 +1919,16 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>2.06972in</Width>
+                  <Width>2.0722in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.70924in</Width>
+                  <Width>1.71172in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>2.26444in</Width>
+                  <Width>2.26692in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>2.19198in</Width>
+                  <Width>2.19446in</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -2166,7 +2167,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!Total_Company_Expenses.Value</Value>
+                                  <Value>=First(Fields!Total_Company_Expenses.Value, "DataSet_Result")</Value>
                                   <Style>
                                     <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -2201,7 +2202,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!Total_Max_Expected_Company_Expenses.Value</Value>
+                                  <Value>=First(Fields!Total_Max_Expected_Company_Expenses.Value, "DataSet_Result")</Value>
                                   <Style>
                                     <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -2247,9 +2248,9 @@
             </TablixRowHierarchy>
             <DataSetName>DataSet_Result</DataSetName>
             <Top>2.04042in</Top>
-            <Left>0.00991in</Left>
+            <Left>0.14853in</Left>
             <Height>0.5in</Height>
-            <Width>8.23538in</Width>
+            <Width>8.2453in</Width>
             <ZIndex>16</ZIndex>
             <Style>
               <Border>
@@ -2258,10 +2259,10 @@
             </Style>
           </Tablix>
         </ReportItems>
-        <Height>29.07772cm</Height>
+        <Height>26.22022cm</Height>
         <Style />
       </Body>
-      <Width>20.99338cm</Width>
+      <Width>21.59cm</Width>
       <Page>
         <PageHeight>27.94cm</PageHeight>
         <PageWidth>21.59cm</PageWidth>

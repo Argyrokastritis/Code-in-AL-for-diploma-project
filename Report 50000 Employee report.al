@@ -253,13 +253,8 @@ report 50000 "Employee insurances report"
 
             }
 
-
-            //trigger OnAfterGetRecord()
-            // begin
-
-            // end;
-
         }
+
     }
 
     requestpage

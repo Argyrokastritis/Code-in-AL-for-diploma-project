@@ -279,24 +279,24 @@ report 50010 "Admin ec stats and ins report"
             }
 
             //TODOERG
-           // trigger OnAfterGetRecord()
-           // var
-           //     payment: record "Insurance Payment";
-           // begin
-//
- //               Total_Expected_earnings += "Main Insurance".Amount;
-  //              Message('The expected earnings = %1', Total_Expected_earnings);//
-//
+            // trigger OnAfterGetRecord()
+            // var
+            //     payment: record "Insurance Payment";
+            // begin
+            //
+            //               Total_Expected_earnings += "Main Insurance".Amount;
+            //              Message('The expected earnings = %1', Total_Expected_earnings);//
+            //
 
-  //              payment.Reset();
-    //            if payment.FindFirst() then
-      //              repeat
-        //                Total_Company_earnings += payment.amount;
-          //          until payment.next() = 0;
+            //              payment.Reset();
+            //            if payment.FindFirst() then
+            //              repeat
+            //                Total_Company_earnings += payment.amount;
+            //          until payment.next() = 0;
             //    Message('The expected earnings = %1', Total_Company_earnings);
-              //  Message('');
+            //  Message('');
 
-           // end;
+            // end;
 
         }
     }
@@ -426,10 +426,12 @@ report 50010 "Admin ec stats and ins report"
     trigger OnPreReport()
     begin
         //gives me the current user 
-        Calcsums(Total_Company_earnings, Total_Expected_earnings);
+        Calcsums(Total_Company_earnings, Total_Expected_earnings, Total_Company_Expenses, Total_Max_Expected_Company_Expenses);
     end;
 
-    procedure Calcsums(var amount1: Integer; var amount2: integer)
+    //this procedure calculate some sums to be used by calling the function on the trigger.
+    //amount1 is Total_Company_earnings ,amount2 is  Total_Expected_earnings,amount3 is Total_Company_Expenses, amount4 is Total_Max_Expected_Company_Expenses
+    procedure Calcsums(var amount1: Integer; var amount2: Integer; var amount3: Integer; var amount4: integer)
     var
         payment: Record "Insurance Payment";
         MainInsL: Record "Main Insurance";
@@ -443,13 +445,27 @@ report 50010 "Admin ec stats and ins report"
                 amount1 += payment.amount;
             until payment.next() = 0;
 
-        //to idio gia ta main insurance
         amount2 := 0;
         "Main Insurance".Reset();
         if "Main Insurance".FindFirst() then
             repeat
                 amount2 += "Main Insurance".Amount;
             until "Main Insurance".Next() = 0;
+
+        amount3 := 0;
+        "Main Insurance".Reset();
+        if "Main Insurance".FindFirst() then
+            repeat
+                amount3 += "Main Insurance"."Current Claims Amount";
+            until "Main Insurance".Next() = 0;
+
+        amount4 := 0;
+        "Main Insurance".Reset();
+        if "Main Insurance".FindFirst() then
+            repeat
+                amount4 += "Main Insurance"."Max Benefits Limit";
+            until "Main Insurance".Next() = 0;
+
 
 
     end;

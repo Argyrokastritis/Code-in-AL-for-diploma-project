@@ -107,6 +107,7 @@ page 50000 "Insurance Card Page"
                 RunPageLink = "Insurance No." = FIELD("No.");
                 ToolTip = 'View or add comments for the record.';
             }
+
         }
     }
 

@@ -232,7 +232,7 @@ report 50020 "Customer's insurance report"
             column(Insurance_DateCPT; "Insurance_DateCPT") { }
             column(Insured_ToCPT; "Insured_ToCPT") { }
             column(Handler_noCPT; "Handler_noCPT") { }
-            column(FeeCPT; "FeeCPT") { }
+            column(Fee_CPT; "Fee_CPT") { }
             column(AmountCPT; "AmountCPT") { }
             column(Current_Claims_AmountCPT; "Current_Claims_AmountCPT") { }
             column(Max_Benefits_LimitCPT; "Max_Benefits_LimitCPT") { }
@@ -250,14 +250,12 @@ report 50020 "Customer's insurance report"
 
                 column(Comment; Comment) { }
 
-
             }
 
-
-            //trigger OnAfterGetRecord()
-            // begin
-
-            // end;
+            trigger OnPreDataItem()
+            begin
+                "Main Insurance".SetRange("Insured No.", current_customer);
+            end;
 
         }
     }
@@ -288,13 +286,23 @@ report 50020 "Customer's insurance report"
         ReportTitle = 'Show Student and apoysia info';
     }
     trigger OnInitReport()
+    var
+    //ok: Report "Customer's insurance report";
     begin
+
+        //ok.setemployee();
         CompanyInfo.GET;
         CompanyInfo.CALCFIELDS(Picture);
     end;
 
+    procedure setcustomer(customer_no: code[20])
+    begin
+        current_customer := customer_no;
+    end;
+
 
     var
+        current_customer: code[20];
         CompanyInfo: record "Company Information";
         Customer: Record Customer;
         Comments_Of_insurance: Record "Comments of insurance";
@@ -361,7 +369,7 @@ report 50020 "Customer's insurance report"
         Insurance_DateCPT: TextConst ENU = 'Insurance Date', ENG = 'ΗΜΕΡΟΜΗΝΙΑ ΑΣΦΑΛΙΣΗΣ';
         Insured_ToCPT: TextConst ENU = 'Insured To', ENG = '';
         Handler_noCPT: TextConst ENU = 'Handler no', ENG = 'ΑΣΦΑΛΙΣΤΗΣ ΔΙΑΧΕΙΡΙΣΗΣ';
-        FeeCPT: TextConst ENU = 'Fee', ENG = 'ΠΟΣΟ';
+        Fee_CPT: TextConst ENU = 'Fee', ENG = 'ΠΟΣΟ';
         AmountCPT: TextConst ENU = 'Amount', ENG = 'ΣΥΝΟΛΙΚΟ ΠΟΣΟ ΩΣ ΤΩΡΑ';
         Current_Claims_AmountCPT: TextConst ENU = 'Current Claims Amount', ENG = 'ΠΟΣΑ ΕΧΕΙ ΕΙΣΠΡΑΞΕΙ';
         Max_Benefits_LimitCPT: TextConst ENU = 'Max Benefits Limit', ENG = 'ΜΕΓΙΣΤΟ ΠΟΣΟ ΑΣΦΑΛΙΣΗΣ';
