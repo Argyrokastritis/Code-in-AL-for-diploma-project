@@ -21,11 +21,13 @@ page 50000 "Insurance Card Page"
                 {
                     ApplicationArea = Basic;
                     Importance = Promoted;
+                    ToolTip = 'Specifies the number of the customer. The field is either filled automatically from a defined number series, or you enter the number manually because you have enabled manual number entry in the number-series setup.';
                 }
                 field("type"; Rec."type")
                 {
                     ApplicationArea = Basic;
                     Importance = Promoted;
+                    ToolTip = '';
                 }
                 field("Insured No."; Rec."Insured No.")
                 {
@@ -47,43 +49,52 @@ page 50000 "Insurance Card Page"
                 {
                     ApplicationArea = Basic;
                     Importance = Promoted;
+                    ToolTip = '';
                 }
                 field("Insurance Date"; "Insurance Date")
                 {
                     ApplicationArea = Basic;
+                    ToolTip = '';
                 }
                 field("Insured To"; "Insured To")
                 {
                     ApplicationArea = Basic;
+                    ToolTip = '';
                 }
                 field("Handler no."; "Handler no.")
                 {
                     ApplicationArea = Basic;
+                    ToolTip = '';
                 }
                 field("Fee"; "Fee")
                 {
                     ApplicationArea = Basic;
                     Importance = Promoted;
+                    ToolTip = '';
                 }
                 field("Amount"; "Amount")
                 {
                     ApplicationArea = Basic;
                     Importance = Promoted;
+                    ToolTip = '';
                 }
                 field("Current Claims Amount"; "Current Claims Amount")
                 {
                     ApplicationArea = Basic;
                     Importance = Promoted;
+                    ToolTip = '';
                 }
                 field("Max Benefits Limit"; "Max Benefits Limit")
                 {
                     ApplicationArea = Basic;
                     Importance = Promoted;
+                    ToolTip = '';
                 }
                 field("State of Insurance"; "State of Insurance")
                 {
                     ApplicationArea = Basic;
                     Importance = Promoted;
+                    ToolTip = '';
                 }
 
             }
@@ -95,7 +106,6 @@ page 50000 "Insurance Card Page"
                     ApplicationArea = all;
                     SubPageLink = "Insurance No." = FIELD("No.");
                     SubPageView = SORTING("Insurance No.");
-
                 }
 
                 part("Subpage Insurance Claim"; "Subpage Insurance Claim")
