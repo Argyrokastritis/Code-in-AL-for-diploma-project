@@ -85,11 +85,6 @@ table 50000 "Main Insurance"
     begin
 
     end;
-
-
-
-
-
 }
 
 
