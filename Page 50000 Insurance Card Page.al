@@ -27,12 +27,12 @@ page 50000 "Insurance Card Page"
                 {
                     ApplicationArea = Basic;
                     Importance = Promoted;
-                    ToolTip = '';
+                    ToolTip = 'Specifies the type of the insurance.The available types are: Car,House,Life';
                 }
                 field("Insured No."; Rec."Insured No.")
                 {
                     ApplicationArea = Basic;
-
+                    ToolTip = 'Specifies the no of the insured person and when you choose the no the insered name below is competed on itself';
                     trigger OnValidate()
                     var
                         CustomerInfo: Record Customer;
@@ -49,52 +49,52 @@ page 50000 "Insurance Card Page"
                 {
                     ApplicationArea = Basic;
                     Importance = Promoted;
-                    ToolTip = '';
+                    ToolTip = 'It specifies the name of the insured person';
                 }
                 field("Insurance Date"; "Insurance Date")
                 {
                     ApplicationArea = Basic;
-                    ToolTip = '';
+                    ToolTip = 'It specifies the beginning of the insurance Date';
                 }
                 field("Insured To"; "Insured To")
                 {
                     ApplicationArea = Basic;
-                    ToolTip = '';
+                    ToolTip = 'It specifies the ending of the insurance date';
                 }
                 field("Handler no."; "Handler no.")
                 {
                     ApplicationArea = Basic;
-                    ToolTip = '';
+                    ToolTip = 'It specifies the employee that handles the insurance';
                 }
                 field("Fee"; "Fee")
                 {
                     ApplicationArea = Basic;
                     Importance = Promoted;
-                    ToolTip = '';
+                    ToolTip = 'It specifies the yearly or monthly fee that the insured person is paying';
                 }
                 field("Amount"; "Amount")
                 {
                     ApplicationArea = Basic;
                     Importance = Promoted;
-                    ToolTip = '';
+                    ToolTip = 'It specidies the total amount that the insured person will pay';
                 }
                 field("Current Claims Amount"; "Current Claims Amount")
                 {
                     ApplicationArea = Basic;
                     Importance = Promoted;
-                    ToolTip = '';
+                    ToolTip = 'It specifies the current claims in eyros that the insured person has taken from the insurance so far';
                 }
                 field("Max Benefits Limit"; "Max Benefits Limit")
                 {
                     ApplicationArea = Basic;
                     Importance = Promoted;
-                    ToolTip = '';
+                    ToolTip = 'It specifies the max benefits limit that the insured person can get from the insurance that he has made';
                 }
                 field("State of Insurance"; "State of Insurance")
                 {
                     ApplicationArea = Basic;
                     Importance = Promoted;
-                    ToolTip = '';
+                    ToolTip = 'It specifies the current state of the insurance the states are: Active,fullfiled or cancelled';
                 }
 
             }
