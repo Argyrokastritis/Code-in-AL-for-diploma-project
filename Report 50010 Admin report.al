@@ -466,8 +466,6 @@ report 50010 "Admin ec stats and ins report"
                 amount4 += "Main Insurance"."Max Benefits Limit";
             until "Main Insurance".Next() = 0;
 
-
-
     end;
 
 }

@@ -71,9 +71,7 @@ page 50000 "Insurance Card Page"
                     SubPageLink = "Insurance No." = FIELD("No.");
                     SubPageView = SORTING("Insurance No.");
                 }
-
             }
-
         }
     }
 

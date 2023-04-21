@@ -20,5 +20,4 @@ page 50080 "Insurance Attributes Mapping"
             }
         }
     }
-
 }

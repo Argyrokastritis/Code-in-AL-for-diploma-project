@@ -19,20 +19,4 @@ page 50110 "Comments of insurance List"
         }
     }
 
-
-    // trigger OnOpenPage()
-    // var
-    //     Mainins: Record "Main Insurance";
-    // begin
-
-    //     Rec.FindSet();
-
-    //     if Mainins.FindSet() then begin
-    //         repeat
-    //             //syn ta alla
-    //             Rec."No." := Mainins."No.";
-    //         until Mainins.Next() = 0;
-    //     end;
-    // end;
-
 }

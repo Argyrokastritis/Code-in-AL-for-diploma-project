@@ -250,7 +250,6 @@ report 50000 "Employee insurances report"
 
                 column(Comment; Comment) { }
 
-
             }
 
         }
