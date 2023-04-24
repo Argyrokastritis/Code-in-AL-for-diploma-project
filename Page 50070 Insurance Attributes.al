@@ -16,14 +16,30 @@ page 50070 "Insurance Attributes"
             group(General)
             {
 
-                field(id; id) { ApplicationArea = Basic; Importance = Promoted; }
-
-
-                field("type"; "type") { ApplicationArea = Basic; Importance = Promoted; }
-                field("name"; "name") { ApplicationArea = Basic; Importance = Promoted; }
-                field("Description"; "Description") { ApplicationArea = ALL; }
+                field(id; id)
+                {
+                    ApplicationArea = Basic;
+                    Importance = Promoted;
+                    ToolTip = 'This is the id of the attribute';
+                }
+                field("type"; "type")
+                {
+                    ApplicationArea = Basic;
+                    Importance = Promoted;
+                    ToolTip = 'This is the type of insurance that the attribute belongs to.The attributes are:Car,House,Life';
+                }
+                field("name"; "name")
+                {
+                    ApplicationArea = Basic;
+                    Importance = Promoted;
+                    ToolTip = 'This is the name of the attribute so the user knows what is about.';
+                }
+                field("Description"; "Description")
+                {
+                    ApplicationArea = ALL;
+                    ToolTip = 'This is the description of the attribute in order for the user to see more info and details about the attribute';
+                }
             }
-
 
         }
     }
