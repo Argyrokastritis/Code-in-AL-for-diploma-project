@@ -371,6 +371,5 @@ report 50000 "Employee insurances report"
         UserId
     end;
 
-
 }
 
