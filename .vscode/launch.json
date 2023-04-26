@@ -8,7 +8,7 @@
             "environmentType": "OnPrem",
             "server": "http://DEV2K16",
             "serverInstance": "BC170",
-            "authentication":"Windows",
+            "authentication":"UserPassword",
             "port": 27049,
             //"startupObjectId": 50111,
             "startupObjectType": "Page",
