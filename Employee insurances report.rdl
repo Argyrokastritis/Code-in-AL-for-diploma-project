@@ -11,6 +11,298 @@
       <rd:DataSourceID>afbc3304-052c-4dd0-84b1-0d204c514720</rd:DataSourceID>
     </DataSource>
   </DataSources>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+      <Fields>
+        <Field Name="CompanyPic">
+          <DataField>CompanyPic</DataField>
+        </Field>
+        <Field Name="CompanyName">
+          <DataField>CompanyName</DataField>
+        </Field>
+        <Field Name="CompanyPostCode">
+          <DataField>CompanyPostCode</DataField>
+        </Field>
+        <Field Name="CompanyCity">
+          <DataField>CompanyCity</DataField>
+        </Field>
+        <Field Name="CompanyAddress">
+          <DataField>CompanyAddress</DataField>
+        </Field>
+        <Field Name="CompanyPhoneNo">
+          <DataField>CompanyPhoneNo</DataField>
+        </Field>
+        <Field Name="CompanyFax">
+          <DataField>CompanyFax</DataField>
+        </Field>
+        <Field Name="CompanyVatRegNo">
+          <DataField>CompanyVatRegNo</DataField>
+        </Field>
+        <Field Name="Doy_Cpt">
+          <DataField>Doy_Cpt</DataField>
+        </Field>
+        <Field Name="DocType_Cpt">
+          <DataField>DocType_Cpt</DataField>
+        </Field>
+        <Field Name="Series_Cpt">
+          <DataField>Series_Cpt</DataField>
+        </Field>
+        <Field Name="No_Cpt">
+          <DataField>No_Cpt</DataField>
+        </Field>
+        <Field Name="Date_Cpt">
+          <DataField>Date_Cpt</DataField>
+        </Field>
+        <Field Name="Stoixeia_Cpt">
+          <DataField>Stoixeia_Cpt</DataField>
+        </Field>
+        <Field Name="Code_Cpt">
+          <DataField>Code_Cpt</DataField>
+        </Field>
+        <Field Name="Name_Cpt">
+          <DataField>Name_Cpt</DataField>
+        </Field>
+        <Field Name="Profession_Cpt">
+          <DataField>Profession_Cpt</DataField>
+        </Field>
+        <Field Name="OdosArith_Cpt">
+          <DataField>OdosArith_Cpt</DataField>
+        </Field>
+        <Field Name="City_Cpt">
+          <DataField>City_Cpt</DataField>
+        </Field>
+        <Field Name="PostCode_Cpt">
+          <DataField>PostCode_Cpt</DataField>
+        </Field>
+        <Field Name="Vat_Cpt">
+          <DataField>Vat_Cpt</DataField>
+        </Field>
+        <Field Name="SxetikaParas_Cpt">
+          <DataField>SxetikaParas_Cpt</DataField>
+        </Field>
+        <Field Name="ArithmosEggraf_Cpt">
+          <DataField>ArithmosEggraf_Cpt</DataField>
+        </Field>
+        <Field Name="SkoposDiak_Cpt">
+          <DataField>SkoposDiak_Cpt</DataField>
+        </Field>
+        <Field Name="Location_Cpt">
+          <DataField>Location_Cpt</DataField>
+        </Field>
+        <Field Name="Destination_Cpt">
+          <DataField>Destination_Cpt</DataField>
+        </Field>
+        <Field Name="TroposPlir_Cpt">
+          <DataField>TroposPlir_Cpt</DataField>
+        </Field>
+        <Field Name="Desc_Cpt">
+          <DataField>Desc_Cpt</DataField>
+        </Field>
+        <Field Name="MonMetr_Cpt">
+          <DataField>MonMetr_Cpt</DataField>
+        </Field>
+        <Field Name="Qty_Cpt">
+          <DataField>Qty_Cpt</DataField>
+        </Field>
+        <Field Name="UnitPrice_Cpt">
+          <DataField>UnitPrice_Cpt</DataField>
+        </Field>
+        <Field Name="AksiaproEkpt_Cpt">
+          <DataField>AksiaproEkpt_Cpt</DataField>
+        </Field>
+        <Field Name="Ekpt_Cpt">
+          <DataField>Ekpt_Cpt</DataField>
+        </Field>
+        <Field Name="EkptPoso_Cpt">
+          <DataField>EkptPoso_Cpt</DataField>
+        </Field>
+        <Field Name="AksiametaEkpt_Cpt">
+          <DataField>AksiametaEkpt_Cpt</DataField>
+        </Field>
+        <Field Name="Fpa_Cpt">
+          <DataField>Fpa_Cpt</DataField>
+        </Field>
+        <Field Name="ValueFpa_Cpt">
+          <DataField>ValueFpa_Cpt</DataField>
+        </Field>
+        <Field Name="AnalysiFpa_Cpt">
+          <DataField>AnalysiFpa_Cpt</DataField>
+        </Field>
+        <Field Name="ProhgYpol_Cpt">
+          <DataField>ProhgYpol_Cpt</DataField>
+        </Field>
+        <Field Name="NeoYpol_Cpt">
+          <DataField>NeoYpol_Cpt</DataField>
+        </Field>
+        <Field Name="KatharoPosoanaFpa_Cpt">
+          <DataField>KatharoPosoanaFpa_Cpt</DataField>
+        </Field>
+        <Field Name="PosoFpa_Cpt">
+          <DataField>PosoFpa_Cpt</DataField>
+        </Field>
+        <Field Name="TelikiAksia_Cpt">
+          <DataField>TelikiAksia_Cpt</DataField>
+        </Field>
+        <Field Name="Ekdosi_Cpt">
+          <DataField>Ekdosi_Cpt</DataField>
+        </Field>
+        <Field Name="Paradosi_Cpt">
+          <DataField>Paradosi_Cpt</DataField>
+        </Field>
+        <Field Name="Paralavi_Cpt">
+          <DataField>Paralavi_Cpt</DataField>
+        </Field>
+        <Field Name="Sxolio_Cpt">
+          <DataField>Sxolio_Cpt</DataField>
+        </Field>
+        <Field Name="Atheorita_Cpt">
+          <DataField>Atheorita_Cpt</DataField>
+        </Field>
+        <Field Name="Amp_Cpt">
+          <DataField>Amp_Cpt</DataField>
+        </Field>
+        <Field Name="SynolikiPosotita_Cpt">
+          <DataField>SynolikiPosotita_Cpt</DataField>
+        </Field>
+        <Field Name="GrandTotal_Cpt">
+          <DataField>GrandTotal_Cpt</DataField>
+        </Field>
+        <Field Name="Epivarinseis_Cpt">
+          <DataField>Epivarinseis_Cpt</DataField>
+        </Field>
+        <Field Name="Paratiriseis_Cpt">
+          <DataField>Paratiriseis_Cpt</DataField>
+        </Field>
+        <Field Name="Pistopoihsh_Cpt">
+          <DataField>Pistopoihsh_Cpt</DataField>
+        </Field>
+        <Field Name="CompanyContactPerson">
+          <DataField>CompanyContactPerson</DataField>
+        </Field>
+        <Field Name="CustomerName">
+          <DataField>CustomerName</DataField>
+        </Field>
+        <Field Name="CustomerAddress">
+          <DataField>CustomerAddress</DataField>
+        </Field>
+        <Field Name="CustomerCity">
+          <DataField>CustomerCity</DataField>
+        </Field>
+        <Field Name="CustomerPostCode">
+          <DataField>CustomerPostCode</DataField>
+        </Field>
+        <Field Name="CustomerVat">
+          <DataField>CustomerVat</DataField>
+        </Field>
+        <Field Name="No">
+          <DataField>No</DataField>
+        </Field>
+        <Field Name="type">
+          <DataField>type</DataField>
+        </Field>
+        <Field Name="Insured_Name">
+          <DataField>Insured_Name</DataField>
+        </Field>
+        <Field Name="Insured_No">
+          <DataField>Insured_No</DataField>
+        </Field>
+        <Field Name="Insurance_Date">
+          <DataField>Insurance_Date</DataField>
+        </Field>
+        <Field Name="Insured_To">
+          <DataField>Insured_To</DataField>
+        </Field>
+        <Field Name="Handler_no">
+          <DataField>Handler_no</DataField>
+        </Field>
+        <Field Name="Fee">
+          <DataField>Fee</DataField>
+        </Field>
+        <Field Name="FeeFormat">
+          <DataField>FeeFormat</DataField>
+        </Field>
+        <Field Name="Amount">
+          <DataField>Amount</DataField>
+        </Field>
+        <Field Name="AmountFormat">
+          <DataField>AmountFormat</DataField>
+        </Field>
+        <Field Name="Current_Claims_Amount">
+          <DataField>Current_Claims_Amount</DataField>
+        </Field>
+        <Field Name="Current_Claims_AmountFormat">
+          <DataField>Current_Claims_AmountFormat</DataField>
+        </Field>
+        <Field Name="Max_Benefits_Limit">
+          <DataField>Max_Benefits_Limit</DataField>
+        </Field>
+        <Field Name="Max_Benefits_LimitFormat">
+          <DataField>Max_Benefits_LimitFormat</DataField>
+        </Field>
+        <Field Name="State_of_Insurance">
+          <DataField>State_of_Insurance</DataField>
+        </Field>
+        <Field Name="Thl_Cpt">
+          <DataField>Thl_Cpt</DataField>
+        </Field>
+        <Field Name="Fax_Cpt">
+          <DataField>Fax_Cpt</DataField>
+        </Field>
+        <Field Name="Insurance_NoCPT">
+          <DataField>Insurance_NoCPT</DataField>
+        </Field>
+        <Field Name="Insurance_typeCPT">
+          <DataField>Insurance_typeCPT</DataField>
+        </Field>
+        <Field Name="Insured_NameCPT">
+          <DataField>Insured_NameCPT</DataField>
+        </Field>
+        <Field Name="Insured_NoCPT">
+          <DataField>Insured_NoCPT</DataField>
+        </Field>
+        <Field Name="Insurance_DateCPT">
+          <DataField>Insurance_DateCPT</DataField>
+        </Field>
+        <Field Name="Insured_ToCPT">
+          <DataField>Insured_ToCPT</DataField>
+        </Field>
+        <Field Name="Handler_noCPT">
+          <DataField>Handler_noCPT</DataField>
+        </Field>
+        <Field Name="FeeCPT">
+          <DataField>FeeCPT</DataField>
+        </Field>
+        <Field Name="AmountCPT">
+          <DataField>AmountCPT</DataField>
+        </Field>
+        <Field Name="Current_Claims_AmountCPT">
+          <DataField>Current_Claims_AmountCPT</DataField>
+        </Field>
+        <Field Name="Max_Benefits_LimitCPT">
+          <DataField>Max_Benefits_LimitCPT</DataField>
+        </Field>
+        <Field Name="State_of_InsuranceCPT">
+          <DataField>State_of_InsuranceCPT</DataField>
+        </Field>
+        <Field Name="UserComment">
+          <DataField>UserComment</DataField>
+        </Field>
+        <Field Name="Insurance_No">
+          <DataField>Insurance_No</DataField>
+        </Field>
+        <Field Name="Comment_no">
+          <DataField>Comment_no</DataField>
+        </Field>
+        <Field Name="Comment">
+          <DataField>Comment</DataField>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
   <ReportSections>
     <ReportSection>
       <Body>
@@ -1881,10 +2173,10 @@
             </Style>
           </Textbox>
         </ReportItems>
-        <Height>17.91229cm</Height>
+        <Height>16.82793cm</Height>
         <Style />
       </Body>
-      <Width>22.23412cm</Width>
+      <Width>21.33676cm</Width>
       <Page>
         <PageHeight>27.94cm</PageHeight>
         <PageWidth>21.59cm</PageWidth>
@@ -2012,296 +2304,4 @@ End Function
   <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
   <rd:ReportUnitType>Cm</rd:ReportUnitType>
   <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
-  <DataSets>
-    <DataSet Name="DataSet_Result">
-      <Fields>
-        <Field Name="CompanyPic">
-          <DataField>CompanyPic</DataField>
-        </Field>
-        <Field Name="CompanyName">
-          <DataField>CompanyName</DataField>
-        </Field>
-        <Field Name="CompanyPostCode">
-          <DataField>CompanyPostCode</DataField>
-        </Field>
-        <Field Name="CompanyCity">
-          <DataField>CompanyCity</DataField>
-        </Field>
-        <Field Name="CompanyAddress">
-          <DataField>CompanyAddress</DataField>
-        </Field>
-        <Field Name="CompanyPhoneNo">
-          <DataField>CompanyPhoneNo</DataField>
-        </Field>
-        <Field Name="CompanyFax">
-          <DataField>CompanyFax</DataField>
-        </Field>
-        <Field Name="CompanyVatRegNo">
-          <DataField>CompanyVatRegNo</DataField>
-        </Field>
-        <Field Name="Doy_Cpt">
-          <DataField>Doy_Cpt</DataField>
-        </Field>
-        <Field Name="DocType_Cpt">
-          <DataField>DocType_Cpt</DataField>
-        </Field>
-        <Field Name="Series_Cpt">
-          <DataField>Series_Cpt</DataField>
-        </Field>
-        <Field Name="No_Cpt">
-          <DataField>No_Cpt</DataField>
-        </Field>
-        <Field Name="Date_Cpt">
-          <DataField>Date_Cpt</DataField>
-        </Field>
-        <Field Name="Stoixeia_Cpt">
-          <DataField>Stoixeia_Cpt</DataField>
-        </Field>
-        <Field Name="Code_Cpt">
-          <DataField>Code_Cpt</DataField>
-        </Field>
-        <Field Name="Name_Cpt">
-          <DataField>Name_Cpt</DataField>
-        </Field>
-        <Field Name="Profession_Cpt">
-          <DataField>Profession_Cpt</DataField>
-        </Field>
-        <Field Name="OdosArith_Cpt">
-          <DataField>OdosArith_Cpt</DataField>
-        </Field>
-        <Field Name="City_Cpt">
-          <DataField>City_Cpt</DataField>
-        </Field>
-        <Field Name="PostCode_Cpt">
-          <DataField>PostCode_Cpt</DataField>
-        </Field>
-        <Field Name="Vat_Cpt">
-          <DataField>Vat_Cpt</DataField>
-        </Field>
-        <Field Name="SxetikaParas_Cpt">
-          <DataField>SxetikaParas_Cpt</DataField>
-        </Field>
-        <Field Name="ArithmosEggraf_Cpt">
-          <DataField>ArithmosEggraf_Cpt</DataField>
-        </Field>
-        <Field Name="SkoposDiak_Cpt">
-          <DataField>SkoposDiak_Cpt</DataField>
-        </Field>
-        <Field Name="Location_Cpt">
-          <DataField>Location_Cpt</DataField>
-        </Field>
-        <Field Name="Destination_Cpt">
-          <DataField>Destination_Cpt</DataField>
-        </Field>
-        <Field Name="TroposPlir_Cpt">
-          <DataField>TroposPlir_Cpt</DataField>
-        </Field>
-        <Field Name="Desc_Cpt">
-          <DataField>Desc_Cpt</DataField>
-        </Field>
-        <Field Name="MonMetr_Cpt">
-          <DataField>MonMetr_Cpt</DataField>
-        </Field>
-        <Field Name="Qty_Cpt">
-          <DataField>Qty_Cpt</DataField>
-        </Field>
-        <Field Name="UnitPrice_Cpt">
-          <DataField>UnitPrice_Cpt</DataField>
-        </Field>
-        <Field Name="AksiaproEkpt_Cpt">
-          <DataField>AksiaproEkpt_Cpt</DataField>
-        </Field>
-        <Field Name="Ekpt_Cpt">
-          <DataField>Ekpt_Cpt</DataField>
-        </Field>
-        <Field Name="EkptPoso_Cpt">
-          <DataField>EkptPoso_Cpt</DataField>
-        </Field>
-        <Field Name="AksiametaEkpt_Cpt">
-          <DataField>AksiametaEkpt_Cpt</DataField>
-        </Field>
-        <Field Name="Fpa_Cpt">
-          <DataField>Fpa_Cpt</DataField>
-        </Field>
-        <Field Name="ValueFpa_Cpt">
-          <DataField>ValueFpa_Cpt</DataField>
-        </Field>
-        <Field Name="AnalysiFpa_Cpt">
-          <DataField>AnalysiFpa_Cpt</DataField>
-        </Field>
-        <Field Name="ProhgYpol_Cpt">
-          <DataField>ProhgYpol_Cpt</DataField>
-        </Field>
-        <Field Name="NeoYpol_Cpt">
-          <DataField>NeoYpol_Cpt</DataField>
-        </Field>
-        <Field Name="KatharoPosoanaFpa_Cpt">
-          <DataField>KatharoPosoanaFpa_Cpt</DataField>
-        </Field>
-        <Field Name="PosoFpa_Cpt">
-          <DataField>PosoFpa_Cpt</DataField>
-        </Field>
-        <Field Name="TelikiAksia_Cpt">
-          <DataField>TelikiAksia_Cpt</DataField>
-        </Field>
-        <Field Name="Ekdosi_Cpt">
-          <DataField>Ekdosi_Cpt</DataField>
-        </Field>
-        <Field Name="Paradosi_Cpt">
-          <DataField>Paradosi_Cpt</DataField>
-        </Field>
-        <Field Name="Paralavi_Cpt">
-          <DataField>Paralavi_Cpt</DataField>
-        </Field>
-        <Field Name="Sxolio_Cpt">
-          <DataField>Sxolio_Cpt</DataField>
-        </Field>
-        <Field Name="Atheorita_Cpt">
-          <DataField>Atheorita_Cpt</DataField>
-        </Field>
-        <Field Name="Amp_Cpt">
-          <DataField>Amp_Cpt</DataField>
-        </Field>
-        <Field Name="SynolikiPosotita_Cpt">
-          <DataField>SynolikiPosotita_Cpt</DataField>
-        </Field>
-        <Field Name="GrandTotal_Cpt">
-          <DataField>GrandTotal_Cpt</DataField>
-        </Field>
-        <Field Name="Epivarinseis_Cpt">
-          <DataField>Epivarinseis_Cpt</DataField>
-        </Field>
-        <Field Name="Paratiriseis_Cpt">
-          <DataField>Paratiriseis_Cpt</DataField>
-        </Field>
-        <Field Name="Pistopoihsh_Cpt">
-          <DataField>Pistopoihsh_Cpt</DataField>
-        </Field>
-        <Field Name="CompanyContactPerson">
-          <DataField>CompanyContactPerson</DataField>
-        </Field>
-        <Field Name="CustomerName">
-          <DataField>CustomerName</DataField>
-        </Field>
-        <Field Name="CustomerAddress">
-          <DataField>CustomerAddress</DataField>
-        </Field>
-        <Field Name="CustomerCity">
-          <DataField>CustomerCity</DataField>
-        </Field>
-        <Field Name="CustomerPostCode">
-          <DataField>CustomerPostCode</DataField>
-        </Field>
-        <Field Name="CustomerVat">
-          <DataField>CustomerVat</DataField>
-        </Field>
-        <Field Name="No">
-          <DataField>No</DataField>
-        </Field>
-        <Field Name="type">
-          <DataField>type</DataField>
-        </Field>
-        <Field Name="Insured_Name">
-          <DataField>Insured_Name</DataField>
-        </Field>
-        <Field Name="Insured_No">
-          <DataField>Insured_No</DataField>
-        </Field>
-        <Field Name="Insurance_Date">
-          <DataField>Insurance_Date</DataField>
-        </Field>
-        <Field Name="Insured_To">
-          <DataField>Insured_To</DataField>
-        </Field>
-        <Field Name="Handler_no">
-          <DataField>Handler_no</DataField>
-        </Field>
-        <Field Name="Fee">
-          <DataField>Fee</DataField>
-        </Field>
-        <Field Name="FeeFormat">
-          <DataField>FeeFormat</DataField>
-        </Field>
-        <Field Name="Amount">
-          <DataField>Amount</DataField>
-        </Field>
-        <Field Name="AmountFormat">
-          <DataField>AmountFormat</DataField>
-        </Field>
-        <Field Name="Current_Claims_Amount">
-          <DataField>Current_Claims_Amount</DataField>
-        </Field>
-        <Field Name="Current_Claims_AmountFormat">
-          <DataField>Current_Claims_AmountFormat</DataField>
-        </Field>
-        <Field Name="Max_Benefits_Limit">
-          <DataField>Max_Benefits_Limit</DataField>
-        </Field>
-        <Field Name="Max_Benefits_LimitFormat">
-          <DataField>Max_Benefits_LimitFormat</DataField>
-        </Field>
-        <Field Name="State_of_Insurance">
-          <DataField>State_of_Insurance</DataField>
-        </Field>
-        <Field Name="Thl_Cpt">
-          <DataField>Thl_Cpt</DataField>
-        </Field>
-        <Field Name="Fax_Cpt">
-          <DataField>Fax_Cpt</DataField>
-        </Field>
-        <Field Name="Insurance_NoCPT">
-          <DataField>Insurance_NoCPT</DataField>
-        </Field>
-        <Field Name="Insurance_typeCPT">
-          <DataField>Insurance_typeCPT</DataField>
-        </Field>
-        <Field Name="Insured_NameCPT">
-          <DataField>Insured_NameCPT</DataField>
-        </Field>
-        <Field Name="Insured_NoCPT">
-          <DataField>Insured_NoCPT</DataField>
-        </Field>
-        <Field Name="Insurance_DateCPT">
-          <DataField>Insurance_DateCPT</DataField>
-        </Field>
-        <Field Name="Insured_ToCPT">
-          <DataField>Insured_ToCPT</DataField>
-        </Field>
-        <Field Name="Handler_noCPT">
-          <DataField>Handler_noCPT</DataField>
-        </Field>
-        <Field Name="FeeCPT">
-          <DataField>FeeCPT</DataField>
-        </Field>
-        <Field Name="AmountCPT">
-          <DataField>AmountCPT</DataField>
-        </Field>
-        <Field Name="Current_Claims_AmountCPT">
-          <DataField>Current_Claims_AmountCPT</DataField>
-        </Field>
-        <Field Name="Max_Benefits_LimitCPT">
-          <DataField>Max_Benefits_LimitCPT</DataField>
-        </Field>
-        <Field Name="State_of_InsuranceCPT">
-          <DataField>State_of_InsuranceCPT</DataField>
-        </Field>
-        <Field Name="UserComment">
-          <DataField>UserComment</DataField>
-        </Field>
-        <Field Name="Insurance_No">
-          <DataField>Insurance_No</DataField>
-        </Field>
-        <Field Name="Comment_no">
-          <DataField>Comment_no</DataField>
-        </Field>
-        <Field Name="Comment">
-          <DataField>Comment</DataField>
-        </Field>
-      </Fields>
-      <Query>
-        <DataSourceName>DataSource</DataSourceName>
-        <CommandText />
-      </Query>
-    </DataSet>
-  </DataSets>
 </Report>
