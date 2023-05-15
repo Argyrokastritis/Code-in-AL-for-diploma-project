@@ -49,4 +49,9 @@ page 50040 "Subpage Insurance Claim"
             }
         }
     }
+
+    trigger OnNewRecord(BelowxRec: Boolean)
+    begin
+        Rec."entry no." := Rec.NextEntryNo();
+    end;
 }
