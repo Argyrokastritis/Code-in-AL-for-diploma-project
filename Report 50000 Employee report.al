@@ -254,23 +254,37 @@ report 50000 "Employee insurances report"
             trigger OnAfterGetRecord()
             begin
                 //finds the corresponding row means the customer
-                if Customer.Get("Main Insurance"."Insured No.") then;
+                if Customer.Get("Main Insurance"."Insured No.") then begin
 
-                //Discount for proffesors
-                if Customer."Insurer's job title" = Customer."Insurer's job title"::"University Professor" then begin
 
-                    Fee := Fee - 0.24 * Fee;
-                    Amount := Amount - 0.24 * Amount;
-                    //Message('%1', Fee);
+                    //Discount for proffesors
+                    if Customer."Insurer's job title" = Customer."Insurer's job title"::"University Professor" then begin
+
+                        Fee := Fee - 0.24 * Fee;
+                        Amount := Amount - 0.24 * Amount;
+
+
+                        //10% Discount for Attitude
+                        if Customer."Insurer's attitude" = Customer."Insurer's attitude"::"Very good attitude" then begin
+                            Fee := Fee - 0.1 * Fee;
+                            Amount := Amount - 0.1 * Amount;
+                            Message('%1', Fee);
+                        end;
+                    end;
+
+                    //Discount for High School teachers 
+                    if Customer."Insurer's job title" = Customer."Insurer's job title"::"High School Teacher" then begin
+                        Fee := Fee - 0.15 * Fee;
+                        Amount := Amount - 0.15 * Amount;
+                        //Message('%1', Fee);
+
+                        //10% Discount for Attitude
+                        if Customer."Insurer's attitude" = Customer."Insurer's attitude"::"Very good attitude" then begin
+                            Fee := Fee - 0.1 * Fee;
+                            Amount := Amount - 0.1 * Amount;
+                        end;
+                    end;
                 end;
-
-                //Discount for High School teachers 
-                if Customer."Insurer's job title" = Customer."Insurer's job title"::"High School Teacher" then begin
-                    Fee := Fee - 0.15 * Fee;
-                    Amount := Amount - 0.15 * Amount;
-                    //Message('%1', Fee);
-                end;
-
             end;
         }
 
