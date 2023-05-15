@@ -251,7 +251,27 @@ report 50000 "Employee insurances report"
                 column(Comment; Comment) { }
 
             }
+            trigger OnAfterGetRecord()
+            begin
+                //finds the corresponding row means the customer
+                if Customer.Get("Main Insurance"."Insured No.") then;
 
+                //Discount for proffesors
+                if Customer."Insurer's job title" = Customer."Insurer's job title"::"University Professor" then begin
+
+                    Fee := Fee - 0.24 * Fee;
+                    Amount := Amount - 0.24 * Amount;
+                    //Message('%1', Fee);
+                end;
+
+                //Discount for High School teachers 
+                if Customer."Insurer's job title" = Customer."Insurer's job title"::"High School Teacher" then begin
+                    Fee := Fee - 0.15 * Fee;
+                    Amount := Amount - 0.15 * Amount;
+                    //Message('%1', Fee);
+                end;
+
+            end;
         }
 
     }

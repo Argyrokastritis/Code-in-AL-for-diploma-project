@@ -218,72 +218,151 @@ report 50010 "Admin ec stats and ins report"
             column(CustomerVat; Customer."VAT Registration No.") { }
 
             //Info of Insurance
-            column(No; "No.") { }
-            column(type; "type") { IncludeCaption = true; }
-            column(Insured_Name; "Insured Name") { IncludeCaption = true; }
-            column(Insured_No; "Insured No.") { IncludeCaption = true; }
-            column(Insurance_Date; "Insurance Date") { IncludeCaption = true; }
-            column(Insured_To; "Insured To") { }
-            column(Handler_no; "Handler no.") { }
-            column(Fee; "Fee") { }
-            column(Amount; "Amount") { }
-            column(Current_Claims_Amount; "Current Claims Amount") { }
-            column(Max_Benefits_Limit; "Max Benefits Limit") { }
-            column(State_of_Insurance; "State of Insurance") { }
+            column(No; "No.")
+            {
+
+            }
+            column(type; "type")
+            {
+                IncludeCaption = true;
+            }
+            column(Insured_Name; "Insured Name")
+            {
+                IncludeCaption = true;
+            }
+            column(Insured_No; "Insured No.")
+            {
+                IncludeCaption = true;
+            }
+            column(Insurance_Date; "Insurance Date")
+            {
+                IncludeCaption = true;
+            }
+            column(Insured_To; "Insured To")
+            {
+
+            }
+            column(Handler_no; "Handler no.")
+            {
+
+            }
+            column(Fee; Fee)
+            {
+
+            }
+            column(Amount; "Amount")
+            {
+
+            }
+            column(Current_Claims_Amount; "Current Claims Amount")
+            {
+
+            }
+            column(Max_Benefits_Limit; "Max Benefits Limit")
+            {
+
+            }
+            column(State_of_Insurance; "State of Insurance")
+            {
+
+            }
             //column(Comment; Comments_Of_insurance.Comment) { }
 
             //Info of Insurance CPT's
-            column(Thl_Cpt; Thl_Cpt) { }
-            column(Fax_Cpt; Fax_Cpt) { }
-            column(Insurance_NoCPT; "Insurance_NoCPT") { }
-            column(Insurance_typeCPT; "Insurance_typeCPT") { }
-            column(Insured_NameCPT; "Insured_NameCPT") { }
-            column(Insured_NoCPT; "Insured_NoCPT") { }
-            column(Insurance_DateCPT; "Insurance_DateCPT") { }
-            column(Insured_ToCPT; "Insured_ToCPT") { }
-            column(Handler_noCPT; "Handler_noCPT") { }
-            column(Fee_CPT; "Fee_CPT") { }
-            column(AmountCPT; "AmountCPT") { }
-            column(Current_Claims_AmountCPT; "Current_Claims_AmountCPT") { }
-            column(Max_Benefits_LimitCPT; "Max_Benefits_LimitCPT") { }
-            column(State_of_InsuranceCPT; "State_of_InsuranceCPT") { }
-            column(UserComment; "UserComment") { }
+            column(Thl_Cpt; Thl_Cpt)
+            {
 
+            }
+            column(Fax_Cpt; Fax_Cpt)
+            {
+
+            }
+            column(Insurance_NoCPT; "Insurance_NoCPT")
+            {
+
+            }
+            column(Insurance_typeCPT; "Insurance_typeCPT")
+            {
+
+            }
+            column(Insured_NameCPT; "Insured_NameCPT")
+            {
+
+            }
+            column(Insured_NoCPT; "Insured_NoCPT")
+            {
+
+            }
+            column(Insurance_DateCPT; "Insurance_DateCPT")
+            {
+
+            }
+            column(Insured_ToCPT; "Insured_ToCPT")
+            {
+
+            }
+            column(Handler_noCPT; "Handler_noCPT")
+            {
+
+            }
+            column(Fee_CPT; "Fee_CPT")
+            {
+
+            }
+            column(AmountCPT; "AmountCPT")
+            {
+
+            }
+            column(Current_Claims_AmountCPT; "Current_Claims_AmountCPT")
+            {
+
+            }
+            column(Max_Benefits_LimitCPT; "Max_Benefits_LimitCPT")
+            {
+
+            }
+            column(State_of_InsuranceCPT; "State_of_InsuranceCPT")
+            {
+
+            }
+            column(UserComment; "UserComment")
+            {
+
+            }
             dataitem("Comments of insurance"; "Comments of insurance")
             {
                 DataItemLink = "Insurance No." = FIELD("No.");
                 DataItemTableView = SORTING("Insurance No.", "Comment no.");
                 //PrintOnlyIfDetail = true;
-
                 column(Insurance_No; "Insurance No.") { }
                 column(Comment_no; "Comment no.") { }
-
                 column(Comment; Comment) { }
-
-
             }
 
-            //TODOERG
-            // trigger OnAfterGetRecord()
-            // var
-            //     payment: record "Insurance Payment";
-            // begin
-            //
-            //               Total_Expected_earnings += "Main Insurance".Amount;
-            //              Message('The expected earnings = %1', Total_Expected_earnings);//
-            //
+            trigger OnAfterGetRecord()
+            begin
+                //finds the corresponding row means the customer
+                if Customer.Get("Main Insurance"."Insured No.") then;
 
-            //              payment.Reset();
-            //            if payment.FindFirst() then
-            //              repeat
-            //                Total_Company_earnings += payment.amount;
-            //          until payment.next() = 0;
-            //    Message('The expected earnings = %1', Total_Company_earnings);
-            //  Message('');
+                //Discount for proffesors
+                if Customer."Insurer's job title" = Customer."Insurer's job title"::"University Professor" then begin
 
-            // end;
+                    Fee := Fee - 0.24 * Fee;
+                    Amount := Amount - 0.24 * Amount;
+                    //Message('%1', Fee);
+                end;
+
+                //Discount for High School teachers 
+                if Customer."Insurer's job title" = Customer."Insurer's job title"::"High School Teacher" then begin
+                    Fee := Fee - 0.15 * Fee;
+                    Amount := Amount - 0.15 * Amount;
+                    //Message('%1', Fee);
+                end;
+
+            end;
 
         }
+
     }
 
     requestpage
@@ -296,11 +375,8 @@ report 50010 "Admin ec stats and ins report"
                 {
                     field(UserComment; UserComment)
                     {
-
                         ApplicationArea = Basic;
                         Caption = 'User Comment';
-
-
                     }
                 }
             }
@@ -410,6 +486,7 @@ report 50010 "Admin ec stats and ins report"
 
     trigger OnPreReport()
     begin
+
         //gives me the current user 
         Calcsums(Total_Company_earnings, Total_Expected_earnings, Total_Company_Expenses, Total_Max_Expected_Company_Expenses);
     end;
