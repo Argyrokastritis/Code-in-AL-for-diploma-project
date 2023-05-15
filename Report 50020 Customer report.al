@@ -181,9 +181,7 @@ report 50020 "Customer's insurance report"
             column(CustomerName; Customer.Name)
             {
             }
-            // column(CustomerProfession; Customer."Profession RCGRBASE")
-            // {
-            // }
+
             column(CustomerAddress; Customer.Address)
             {
             }

@@ -120,37 +120,37 @@ page 50000 "Insurance Card Page"
 
     actions
     {
-        area(Creation)
+        area(Navigation)
         {
-            action("insurance attributes")
+            group("More insurance info")
             {
-                ApplicationArea = All;
-                Description = 'Press the View insurance details button to see all isurance attributes';
-                Caption = 'View insurance details';
-                Image = ChartOfAccounts;
-                Promoted = true;
-                PromotedIsBig = true;
-                //PromotedCategory = Category7;
-                RunObject = Page "Insurance Attributes Mapping";
-                RunPageLink = "Insurance No." = FIELD("No.");
-                ToolTip = 'View or add comments for the record.';
+                action("insurance attributes")
+                {
+                    ApplicationArea = All;
+                    Description = 'Press the View insurance details button to see all isurance attributes';
+                    Caption = 'View insurance details';
+                    Image = ChartOfAccounts;
+                    Promoted = true;
+                    PromotedIsBig = true;
+                    //PromotedCategory = Category7;
+                    RunObject = Page "Insurance Attributes Mapping";
+                    RunPageLink = "Insurance No." = FIELD("No.");
+                    ToolTip = 'View or add comments for the record.';
+                }
+                action("insurance comments")
+                {
+                    ApplicationArea = All;
+                    Description = 'Press the View insurance details button to add insurance comments';
+                    Caption = 'View insurance comments';
+                    Image = ChartOfAccounts;
+                    Promoted = true;
+                    PromotedIsBig = true;
+                    //PromotedCategory = Category7;
+                    RunObject = Page "Comments of insurance list";
+                    RunPageLink = "Insurance No." = FIELD("No.");
+                    ToolTip = 'View or add comments for the record.';
+                }
             }
-            action("insurance comments")
-            {
-                ApplicationArea = All;
-                Description = 'Press the View insurance details button to add insurance comments';
-                Caption = 'View insurance comments';
-                Image = ChartOfAccounts;
-                Promoted = true;
-                PromotedIsBig = true;
-                //PromotedCategory = Category7;
-                RunObject = Page "Comments of insurance list";
-                RunPageLink = "Insurance No." = FIELD("No.");
-                ToolTip = 'View or add comments for the record.';
-            }
-
         }
     }
-
-
 }
