@@ -15,7 +15,7 @@ tableextension 50070 "Customerext" extends Customer
         field(50130; "Insurer's job title"; Option)
         {
             Caption = 'Insurer job title';
-            OptionMembers = "Actuary","Architect","Personal Assistant","Entepreneur","Security Guard","Mechanic","Recruiter","Mathematician","Locksmith","Management Consultant","Shelf Stocker","Caretaker or House Sitter","Library Assistant","Translator","HVAC Technician","Attorney","Paralegal","Executive assistant","Bank Teller","Parking Attendant","Machinery operator","Manufacturing Assembler","Funeral Attendant","Assistant Golf Personal","Yoga Instructor","Primary school teacher","High School Teacher","University Professor";
+            OptionMembers = "Actuary","Architect","Assistant Golf Personal","Attorney","Bank Teller","Caretaker or House Sitter","Entepreneur","Executive assistant","Funeral Attendant","High School Teacher","HVAC Technician","Library Assistant","Locksmith","Machinery operator","Management Consultant","Manufacturing Assembler","Mathematician","Mechanic","Paralegal","Parking Attendant","Personal Assistant","Primary school teacher","Recruiter","Security Guard","Shelf Stocker","Translator","University Professor","Yoga Instructor";
         }
     }
 }
