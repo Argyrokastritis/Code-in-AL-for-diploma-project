@@ -15,7 +15,6 @@ table 50020 "Insurance Attribute Map"
             FieldClass = FlowField;
             CalcFormula = lookup("Insurance attribute".Description where(id = field("attribute ID")));
         }
-
     }
     keys
     {
@@ -35,11 +34,6 @@ table 50020 "Insurance Attribute Map"
         MainInsurance.get(rec."Insurance No.");
 
         "InsuranceAttribute".get(rec."attribute ID");
-        //"MainInsurance".SetRange(type);
-
-        //Message('InsuranceAttribute type = %1', "InsuranceAttribute".type);
-        //Message('InsuranceAttribute = %1', "InsuranceAttribute".id);
-        //Message('attribute ID = %1', "attribute ID");
 
         if (MainInsurance.type <> "InsuranceAttribute".type) then begin
 

@@ -62,7 +62,6 @@ table 50000 "Main Insurance"
         key(PK; "No.") { }
     }
 
-
     trigger OnInsert()
     var
         NoSeriesMgt: Codeunit NoSeriesManagement;

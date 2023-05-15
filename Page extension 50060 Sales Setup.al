@@ -12,9 +12,7 @@ pageextension 50060 "Sales Setup" extends "Sales & Receivables Setup"
                 ApplicationArea = All;
                 // = true;
             }
-
         }
-
     }
 }
 

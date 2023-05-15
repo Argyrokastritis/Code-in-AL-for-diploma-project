@@ -47,8 +47,6 @@ page 50030 "Subpage Insurance Payment"
 
                 trigger OnAction();
                 begin
-
-
                 end;
             }
         }

@@ -11,15 +11,25 @@ table 50030 "Insurance Payment"
             Caption = 'Insurance payment type';
             OptionMembers = Annual,Monthly,Onetime;
         }
-        field(40; amount; Decimal) { }
-        field(50; "Insurance Date"; Date) { }
-        field(60; "Descritpion"; Text[250]) { }
+        field(40; amount; Decimal)
+        {
 
+        }
+        field(50; "Insurance Date"; Date)
+        {
+
+        }
+        field(60; "Descritpion"; Text[250])
+        {
+
+        }
     }
     keys
     {
-        key(PK; "Insurance No.", "entry no.") { }
+        key(PK; "Insurance No.", "entry no.")
+        {
 
+        }
     }
 
     //It changes the entry no on every insert with +1
@@ -38,6 +48,4 @@ table 50030 "Insurance Payment"
             NextEntryNo := last_entryno + 1;
         end;
     end;
-
-
 }
