@@ -17,5 +17,9 @@ tableextension 50070 "Customerext" extends Customer
             Caption = 'Insurer job title';
             OptionMembers = "Actuary","Architect","Assistant Golf Personal","Attorney","Bank Teller","Caretaker or House Sitter","Entepreneur","Executive assistant","Funeral Attendant","High School Teacher","HVAC Technician","Library Assistant","Locksmith","Machinery operator","Management Consultant","Manufacturing Assembler","Mathematician","Mechanic","Paralegal","Parking Attendant","Personal Assistant","Primary school teacher","Recruiter","Security Guard","Shelf Stocker","Translator","University Professor","Yoga Instructor";
         }
+        field(50140; "Insurer character description"; text[250])
+        {
+            Caption = 'Insurer character description';
+        }
     }
 }

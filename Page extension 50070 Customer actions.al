@@ -36,6 +36,13 @@ pageextension 50070 "Customer actions" extends "Customer Card"
                         Style = Strong;
                         ToolTip = 'Specifies the job title of the insurer';
                     }
+                    field("Insurer character description"; "Insurer character description")
+                    {
+                        ApplicationArea = Basic, Suite;
+                        Caption = 'Insurer character description';
+                        Style = Standard;
+                        ToolTip = 'Specifies the character of the insurer';
+                    }
                 }
             }
         }
