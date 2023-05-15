@@ -202,25 +202,10 @@ report 50010 "Admin ec stats and ins report"
             column(CompanyContactPerson; CompanyInfo."Contact Person")
             {
             }
-            //column(SeriesDescription; SeriesDescription){ }
-            // column(SeriesNumber; SeriesNumber)
-            // {
-            // }
-            // column(NoSeries; "Sales Shipment Header"."No. Series")
-            // {
-            // }
-            // column(DocumentDate; FORMAT("Sales Shipment Header"."Document Date", 0, '<day,2>/<month,2>/<year4>'))
-            // {
-            // }
-            // column(SelltoCustomerNo; "Sales Shipment Header"."Sell-to Customer No.")
-            // {
-            // }
             column(CustomerName; Customer.Name)
             {
             }
-            // column(CustomerProfession; Customer."Profession RCGRBASE")
-            // {
-            // }
+
             column(CustomerAddress; Customer.Address)
             {
             }
