@@ -151,6 +151,36 @@ page 50000 "Insurance Card Page"
                     ToolTip = 'View or add comments for the record.';
                 }
             }
+            group("Insurance report")
+            {
+                action("Corresponding insurance report")
+                {
+                    ApplicationArea = All;
+                    Description = 'Press the Corresponding insurance report button to view the report for this customer';
+                    Caption = 'View Corresponding insurance report';
+                    Image = ChartOfAccounts;
+                    Promoted = true;
+                    PromotedIsBig = true;
+                    //PromotedCategory = Category7;
+                    //RunObject = Report "Customer's insurance report";
+                    ToolTip = 'View Corresponding insurance report';
+
+                    //trigger OnAction()begin
+                    trigger OnAction()
+                    var
+                        Main_insurance: record "Main Insurance";
+                        Customer_report: Report "Customer's insurance report";
+                        Customer: Record Customer;
+                    begin
+                        //Call the function set customer with the No, which is the customer No.
+                        Customer.Get("Insured No.");
+
+                        Customer_report.setcustomer(Customer."No.");
+                        Customer_report.Run();
+                    end;
+                    //TODO make a function inside customer report that calls the report inside the action                   
+                }
+            }
         }
     }
 }
