@@ -177,19 +177,7 @@ report 50020 "Customer's insurance report"
             column(CompanyContactPerson; CompanyInfo."Contact Person")
             {
             }
-            //column(SeriesDescription; SeriesDescription){ }
-            // column(SeriesNumber; SeriesNumber)
-            // {
-            // }
-            // column(NoSeries; "Sales Shipment Header"."No. Series")
-            // {
-            // }
-            // column(DocumentDate; FORMAT("Sales Shipment Header"."Document Date", 0, '<day,2>/<month,2>/<year4>'))
-            // {
-            // }
-            // column(SelltoCustomerNo; "Sales Shipment Header"."Sell-to Customer No.")
-            // {
-            // }
+
             column(CustomerName; Customer.Name)
             {
             }

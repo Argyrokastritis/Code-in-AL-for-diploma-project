@@ -15,7 +15,7 @@ page 50000 "Insurance Card Page"
         {
 
 
-            group(General)
+            group("General Insurance Info")
             {
                 field("No."; Rec."No.")
                 {
@@ -98,7 +98,7 @@ page 50000 "Insurance Card Page"
                 }
 
             }
-            group(parts)
+            group("Insurance Payments and Claims")
             {
 
                 part("Subpage Insurance Payment"; "Subpage Insurance Payment")

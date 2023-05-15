@@ -2,13 +2,13 @@ pageextension 50070 "Customer actions" extends "Customer Card"
 {
     layout
     {
-        //TODO make a new group session in order to add behavioural statistics
-        addbefore(Address)
+        //make a new group session in order to add behavioural statistics
+        addbefore("Address & Contact")
         {
             group(Behavioural_Statistics)
             {
                 Caption = 'Behavioural Statistics';
-                Editable = false;
+                Editable = true;
                 Visible = true;
                 group(Behaviour)
                 {
@@ -16,30 +16,25 @@ pageextension 50070 "Customer actions" extends "Customer Card"
                     field("Insurer's Payment Consistency"; "Insurer's Payment Consistency")
                     {
                         ApplicationArea = Basic, Suite;
-                        Caption = 'Money Owed - Current';
-                        ToolTip = 'Specifies the payment amount that the customer owes for completed sales. This value is also known as the customer''s balance.';
+                        Caption = 'Insurer Payment Consistency';
+                        ToolTip = 'Specifies whether the insured person is a consistent payer or not';
 
-                        trigger OnDrillDown()
-                        begin
-                            OpenCustomerLedgerEntries(false);
-                        end;
                     }
                     field("Insurer's attitude"; "Insurer's attitude")
                     {
                         ApplicationArea = Basic, Suite;
-                        Caption = 'Money Owed - Expected';
-                        Editable = false;
+                        Caption = 'Insurer attitude';
+                        Editable = true;
                         Importance = Additional;
-                        ToolTip = 'Specifies the payment amount that the customer will owe when ongoing sales invoices and credit memos are completed. The value is calculated asynchronously so there might be a delay in updating this field.';
+                        ToolTip = 'Specifies wheather the insurer attitude is good or bad';
 
                     }
                     field("Insurer's job title"; "Insurer's job title")
                     {
                         ApplicationArea = Basic, Suite;
-                        Caption = 'Money Owed - Total';
+                        Caption = 'Insurer job title';
                         Style = Strong;
-                        StyleExpr = TRUE;
-                        ToolTip = 'Specifies the payment amount that the customer owes for completed sales plus sales that are still ongoing. The value is calculated asynchronously so there might be a delay in updating this field.';
+                        ToolTip = 'Specifies the job title of the insurer';
                     }
                 }
             }

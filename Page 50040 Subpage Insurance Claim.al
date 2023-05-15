@@ -2,7 +2,6 @@ page 50040 "Subpage Insurance Claim"
 {
     PageType = ListPart;
     SourceTable = "Insurance claim";
-    AutoSplitKey = true;
     DelayedInsert = true;
     layout
     {
