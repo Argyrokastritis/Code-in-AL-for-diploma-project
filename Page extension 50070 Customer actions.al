@@ -1,6 +1,50 @@
 pageextension 50070 "Customer actions" extends "Customer Card"
 {
+    layout
+    {
+        //TODO make a new group session in order to add behavioural statistics
+        addbefore(Address)
+        {
+            group(Behavioural_Statistics)
+            {
+                Caption = 'Behavioural Statistics';
+                Editable = false;
+                Visible = true;
+                group(Behaviour)
+                {
+                    Caption = 'Balance';
+                    field("Insurer's Payment Consistency"; "Insurer's Payment Consistency")
+                    {
+                        ApplicationArea = Basic, Suite;
+                        Caption = 'Money Owed - Current';
+                        ToolTip = 'Specifies the payment amount that the customer owes for completed sales. This value is also known as the customer''s balance.';
 
+                        trigger OnDrillDown()
+                        begin
+                            OpenCustomerLedgerEntries(false);
+                        end;
+                    }
+                    field("Insurer's attitude"; "Insurer's attitude")
+                    {
+                        ApplicationArea = Basic, Suite;
+                        Caption = 'Money Owed - Expected';
+                        Editable = false;
+                        Importance = Additional;
+                        ToolTip = 'Specifies the payment amount that the customer will owe when ongoing sales invoices and credit memos are completed. The value is calculated asynchronously so there might be a delay in updating this field.';
+
+                    }
+                    field("Insurer's job title"; "Insurer's job title")
+                    {
+                        ApplicationArea = Basic, Suite;
+                        Caption = 'Money Owed - Total';
+                        Style = Strong;
+                        StyleExpr = TRUE;
+                        ToolTip = 'Specifies the payment amount that the customer owes for completed sales plus sales that are still ongoing. The value is calculated asynchronously so there might be a delay in updating this field.';
+                    }
+                }
+            }
+        }
+    }
 
     actions
     {
