@@ -7,6 +7,7 @@ page 50000 "Insurance Card Page"
     UsageCategory = ReportsAndAnalysis;
     Caption = 'Insurance Card Page';
 
+
     layout
     {
         area(content)
@@ -69,24 +70,62 @@ page 50000 "Insurance Card Page"
                     ApplicationArea = Basic;
                     Importance = Promoted;
                     ToolTip = 'It specifies the yearly or monthly fee that the insured person is paying';
+
+                    trigger OnValidate()
+                    var
+
+                    begin
+
+                        if Fee >= Amount then begin
+                            Error('The Monthly fee cannot be greater than the total Amount the insured person will pay');
+                        end;
+
+                    end;
                 }
                 field("Amount"; "Amount")
                 {
                     ApplicationArea = Basic;
                     Importance = Promoted;
                     ToolTip = 'It specidies the total amount that the insured person will pay';
+
+                    trigger OnValidate()
+                    var
+
+                    begin
+                        if Fee >= Amount then begin
+                            Error('The Monthly fee cannot be greater than the total Amount the insured person will pay');
+                        end;
+                    end;
                 }
                 field("Current Claims Amount"; "Current Claims Amount")
                 {
                     ApplicationArea = Basic;
                     Importance = Promoted;
                     ToolTip = 'It specifies the current claims in eyros that the insured person has taken from the insurance so far';
+
+                    trigger OnValidate()
+                    var
+                    begin
+
+                        if "Current Claims Amount" >= "Max Benefits Limit" then begin
+                            Error('The Monthly current claims cannot be greater than the total Amount the insured person will receive frpm the isurance');
+                        end;
+                    end;
                 }
                 field("Max Benefits Limit"; "Max Benefits Limit")
                 {
                     ApplicationArea = Basic;
                     Importance = Promoted;
                     ToolTip = 'It specifies the max benefits limit that the insured person can get from the insurance that he has made';
+
+                    trigger OnValidate()
+                    var
+                    begin
+
+                        if "Current Claims Amount" >= "Max Benefits Limit" then begin
+                            Error('The Monthly current claims cannot be greater than the total Amount the insured person will receive from the isurance');
+                        end;
+                    end;
                 }
                 field("State of Insurance"; "State of Insurance")
                 {
@@ -94,7 +133,6 @@ page 50000 "Insurance Card Page"
                     Importance = Promoted;
                     ToolTip = 'It specifies the current state of the insurance the states are: Active,fullfiled or cancelled';
                 }
-
             }
             group("Insurance Payments and Claims")
             {
@@ -115,6 +153,7 @@ page 50000 "Insurance Card Page"
             }
         }
     }
+
 
     actions
     {
