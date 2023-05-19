@@ -29,7 +29,7 @@ pageextension 50070 "Customer actions" extends "Customer Card"
                         ToolTip = 'Specifies wheather the insurer attitude is good or bad';
 
                     }
-                    field("Insurer's job title"; "Insurer's job title")
+                    field("Insurer's job title"; "insured job titles")
                     {
                         ApplicationArea = Basic, Suite;
                         Caption = 'Insurer job title';

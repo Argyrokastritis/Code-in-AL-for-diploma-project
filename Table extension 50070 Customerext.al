@@ -12,10 +12,9 @@ tableextension 50070 "Customerext" extends Customer
             Caption = 'Insurer Attitude';
             OptionMembers = "Very good attitude","Good attitude","OK attitude","Bad attitude";
         }
-        field(50130; "Insurer's job title"; Option)
+        field(50130; "insured job titles"; Enum "insured job titles")
         {
-            Caption = 'Insurer job title';
-            OptionMembers = "Actuary","Architect","Assistant Golf Personal","Attorney","Bank Teller","Caretaker or House Sitter","Entepreneur","Executive assistant","Funeral Attendant","High School Teacher","HVAC Technician","Library Assistant","Locksmith","Machinery operator","Management Consultant","Manufacturing Assembler","Mathematician","Mechanic","Paralegal","Parking Attendant","Personal Assistant","Primary school teacher","Recruiter","Security Guard","Shelf Stocker","Translator","University Professor","Yoga Instructor";
+            Caption = 'Insured job title';
         }
         field(50140; "Insurer character description"; text[250])
         {
