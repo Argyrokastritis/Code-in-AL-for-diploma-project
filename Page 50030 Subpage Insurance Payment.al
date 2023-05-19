@@ -26,6 +26,15 @@ page 50030 "Subpage Insurance Payment"
                 field(amount; amount)
                 {
                     ApplicationArea = All;
+                    trigger OnValidate()
+                    var
+                        "Main Insurance": Record "Main Insurance";
+                    begin
+
+                        if amount > "Main Insurance".fee then begin
+                            Error('The Monthle amount payment cannot be greater that the monthly fee');
+                        end;
+                    end;
                 }
                 field("Insurance Date"; "Insurance Date")
                 {

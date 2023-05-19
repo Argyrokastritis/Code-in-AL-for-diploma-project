@@ -24,6 +24,10 @@ table 50040 "Insurance Claim"
         {
 
         }
+        field(60; "Claim Date"; Date)
+        {
+
+        }
     }
     keys
     {
@@ -36,15 +40,15 @@ table 50040 "Insurance Claim"
     procedure NextEntryNo() NextEntryNo: Integer
     var
         last_entryno: Integer;
-        Record2: Record "Insurance Claim";
+        "Insurance Claim": Record "Insurance Claim";
     begin
         //Removes all filters, including any special filters set by MarkedOnly, changes fields select for loading back to all, 
         //and changes the current key to the primary key. 
         //Also removes any marks on the record and clears any AL variables defined on its table definition.
-        Record2.Reset();
-        //
-        if Record2.FindLast() then begin
-            last_entryno := Record2."entry no.";
+        "Insurance Claim".Reset();
+        "Insurance Claim".SetRange("Insurance No.", rec."Insurance No.");
+        if "Insurance Claim".FindLast() then begin
+            last_entryno := "Insurance Claim"."entry no.";
             NextEntryNo := last_entryno + 1;
         end;
     end;

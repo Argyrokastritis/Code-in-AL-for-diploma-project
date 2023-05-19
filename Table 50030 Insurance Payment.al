@@ -41,15 +41,16 @@ table 50030 "Insurance Payment"
     procedure NextEntryNo() NextEntryNo: Integer
     var
         last_entryno: Integer;
-        Record2: Record "Insurance Payment";
+        "Insurance Payment": Record "Insurance Payment";
     begin
         //Removes all filters, including any special filters set by MarkedOnly, changes fields select for loading back to all, 
         //and changes the current key to the primary key. 
         //Also removes any marks on the record and clears any AL variables defined on its table definition.
-        Record2.Reset();
+        "Insurance Payment".Reset();
         //
-        if Record2.FindLast() then begin
-            last_entryno := Record2."entry no.";
+        "Insurance Payment".SetRange("Insurance No.", rec."Insurance No.");
+        if "Insurance Payment".FindLast() then begin
+            last_entryno := "Insurance Payment"."entry no.";
             NextEntryNo := last_entryno + 1;
         end;
     end;

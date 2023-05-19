@@ -260,7 +260,7 @@ report 50020 "Customer's insurance report"
                         if Customer."Insurer's attitude" = Customer."Insurer's attitude"::"Very good attitude" then begin
                             Fee := Fee - 0.1 * Fee;
                             Amount := Amount - 0.1 * Amount;
-                            Message('%1', Fee);
+                            //Message('%1', Fee);
                         end;
                     end;
 

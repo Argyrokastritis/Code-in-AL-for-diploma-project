@@ -76,7 +76,7 @@ page 50000 "Insurance Card Page"
 
                     begin
 
-                        if Fee >= Amount then begin
+                        if Fee > Amount then begin
                             Error('The Monthly fee cannot be greater than the total Amount the insured person will pay');
                         end;
 
@@ -92,7 +92,7 @@ page 50000 "Insurance Card Page"
                     var
 
                     begin
-                        if Fee >= Amount then begin
+                        if Fee > Amount then begin
                             Error('The Monthly fee cannot be greater than the total Amount the insured person will pay');
                         end;
                     end;
@@ -107,7 +107,7 @@ page 50000 "Insurance Card Page"
                     var
                     begin
 
-                        if "Current Claims Amount" >= "Max Benefits Limit" then begin
+                        if "Current Claims Amount" > "Max Benefits Limit" then begin
                             Error('The Monthly current claims cannot be greater than the total Amount the insured person will receive frpm the isurance');
                         end;
                     end;
@@ -122,7 +122,7 @@ page 50000 "Insurance Card Page"
                     var
                     begin
 
-                        if "Current Claims Amount" >= "Max Benefits Limit" then begin
+                        if "Current Claims Amount" > "Max Benefits Limit" then begin
                             Error('The Monthly current claims cannot be greater than the total Amount the insured person will receive from the isurance');
                         end;
                     end;
@@ -137,18 +137,22 @@ page 50000 "Insurance Card Page"
             group("Insurance Payments and Claims")
             {
 
-                part("Subpage Insurance Payment"; "Subpage Insurance Payment")
+                part("Insurance Payment Inspection"; "Subpage Insurance Payment")
                 {
                     ApplicationArea = all;
                     SubPageLink = "Insurance No." = FIELD("No.");
                     SubPageView = SORTING("Insurance No.");
+                    ToolTip = 'Here is an inspection page that shows you an inspection of an insurance payment';
+                    Caption = 'Insurance Payment Inspection';
                 }
 
-                part("Subpage Insurance Claim"; "Subpage Insurance Claim")
+                part("Insurance Claims Inspection"; "Subpage Insurance Claim")
                 {
                     ApplicationArea = all;
                     SubPageLink = "Insurance No." = FIELD("No.");
                     SubPageView = SORTING("Insurance No.");
+                    ToolTip = 'Here is an inspection page that shows you an inspection of the insurance claims';
+                    Caption = 'Insurance Claims Inspection';
                 }
             }
         }

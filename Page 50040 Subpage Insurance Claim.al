@@ -3,6 +3,7 @@ page 50040 "Subpage Insurance Claim"
     PageType = ListPart;
     SourceTable = "Insurance claim";
     DelayedInsert = true;
+
     layout
     {
         area(Content)
@@ -17,6 +18,7 @@ page 50040 "Subpage Insurance Claim"
                 field("Entry No."; "Entry No.")
                 {
                     ApplicationArea = All;
+                    Visible = false;
                 }
                 field(Status; Status)
                 {
@@ -27,6 +29,20 @@ page 50040 "Subpage Insurance Claim"
                     ApplicationArea = All;
                 }
                 field("claim amount"; "claim amount")
+                {
+                    ApplicationArea = All;
+                    trigger OnValidate()
+                    var
+                        "Main Insurance": Record "Main Insurance";
+                    begin
+
+                        "Main Insurance".Get("Insurance No.");
+                        if "claim amount" > "Main Insurance"."Max Benefits Limit" then begin
+                            Error('The Monthly claimed amount cannot be grater than the Max Benefits Limit');
+                        end;
+                    end;
+                }
+                field("Claim Date"; "Claim Date")
                 {
                     ApplicationArea = All;
                 }
