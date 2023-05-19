@@ -250,7 +250,7 @@ report 50020 "Customer's insurance report"
 
 
                     //Discount for proffesors
-                    if Customer."Insurer's job title" = Customer."Insurer's job title"::"University Professor" then begin
+                    if Customer."insured job titles" = Customer."insured job titles"::"University Professor" then begin
 
                         Fee := Fee - 0.24 * Fee;
                         Amount := Amount - 0.24 * Amount;
@@ -265,7 +265,7 @@ report 50020 "Customer's insurance report"
                     end;
 
                     //Discount for High School teachers 
-                    if Customer."Insurer's job title" = Customer."Insurer's job title"::"High School Teacher" then begin
+                    if Customer."insured job titles" = Customer."insured job titles"::"High School Teacher" then begin
                         Fee := Fee - 0.15 * Fee;
                         Amount := Amount - 0.15 * Amount;
                         //Message('%1', Fee);

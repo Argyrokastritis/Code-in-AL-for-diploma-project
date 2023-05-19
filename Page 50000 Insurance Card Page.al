@@ -7,8 +7,6 @@ page 50000 "Insurance Card Page"
     UsageCategory = ReportsAndAnalysis;
     Caption = 'Insurance Card Page';
 
-
-
     layout
     {
         area(content)

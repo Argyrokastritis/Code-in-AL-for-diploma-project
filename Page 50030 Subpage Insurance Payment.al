@@ -57,5 +57,4 @@ page 50030 "Subpage Insurance Payment"
         Rec."entry no." := Rec.NextEntryNo();
     end;
 
-
 }

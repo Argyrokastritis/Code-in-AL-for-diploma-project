@@ -2,8 +2,14 @@ table 50020 "Insurance Attribute Map"
 {
     fields
     {
-        field(1; "Insurance No."; Code[30]) { Tablerelation = "Main Insurance"; }
-        field(10; "attribute ID"; Integer) { Tablerelation = "Insurance attribute"; }
+        field(1; "Insurance No."; Code[30])
+        {
+            Tablerelation = "Main Insurance";
+        }
+        field(10; "attribute ID"; Integer)
+        {
+            Tablerelation = "Insurance attribute";
+        }
         field(20; "Attribute Name"; Text[50])
         {
             FieldClass = FlowField;
@@ -18,8 +24,14 @@ table 50020 "Insurance Attribute Map"
     }
     keys
     {
-        key(PK; "Insurance No.", "attribute ID") { }
-        key("attribute ID"; "attribute ID") { }
+        key(PK; "Insurance No.", "attribute ID")
+        {
+
+        }
+        key("attribute ID"; "attribute ID")
+        {
+
+        }
     }
 
     trigger OnInsert()
