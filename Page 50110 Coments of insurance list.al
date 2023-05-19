@@ -12,9 +12,21 @@ page 50110 "Comments of insurance List"
             //get the info from Course Table
             repeater(General)
             {
-                field("No."; "Insurance No.") { Visible = false; ApplicationArea = Basic; Importance = Promoted; }
-                field("type"; "Comment no.") { ApplicationArea = Basic; Importance = Promoted; }
-                field(Comment; Comment) { ApplicationArea = ALL; }
+                field("No."; "Insurance No.")
+                {
+                    Visible = false;
+                    ApplicationArea = Basic;
+                    Importance = Promoted;
+                }
+                field("type"; "Comment no.")
+                {
+                    ApplicationArea = Basic;
+                    Importance = Promoted;
+                }
+                field(Comment; Comment)
+                {
+                    ApplicationArea = ALL;
+                }
             }
         }
     }
