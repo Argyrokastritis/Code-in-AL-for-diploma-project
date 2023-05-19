@@ -23,7 +23,10 @@ table 50010 "Insurance attribute"
     }
     keys
     {
-        key(PK; id) { }
+        key(PK; id)
+        {
+
+        }
 
     }
     //here I put the dropdown field

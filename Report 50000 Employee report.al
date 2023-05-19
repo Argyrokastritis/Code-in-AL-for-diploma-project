@@ -177,25 +177,11 @@ report 50000 "Employee insurances report"
             column(CompanyContactPerson; CompanyInfo."Contact Person")
             {
             }
-            //column(SeriesDescription; SeriesDescription){ }
-            // column(SeriesNumber; SeriesNumber)
-            // {
-            // }
-            // column(NoSeries; "Sales Shipment Header"."No. Series")
-            // {
-            // }
-            // column(DocumentDate; FORMAT("Sales Shipment Header"."Document Date", 0, '<day,2>/<month,2>/<year4>'))
-            // {
-            // }
-            // column(SelltoCustomerNo; "Sales Shipment Header"."Sell-to Customer No.")
-            // {
-            // }
+
             column(CustomerName; Customer.Name)
             {
             }
-            // column(CustomerProfession; Customer."Profession RCGRBASE")
-            // {
-            // }
+
             column(CustomerAddress; Customer.Address)
             {
             }
@@ -268,7 +254,7 @@ report 50000 "Employee insurances report"
                         if Customer."Insurer's attitude" = Customer."Insurer's attitude"::"Very good attitude" then begin
                             Fee := Fee - 0.1 * Fee;
                             Amount := Amount - 0.1 * Amount;
-                            Message('%1', Fee);
+                            //Message('%1', Fee);
                         end;
                     end;
 

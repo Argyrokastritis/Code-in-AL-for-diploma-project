@@ -55,7 +55,6 @@ table 50000 "Main Insurance"
             Caption = 'State of Insurance';
             OptionMembers = Active,Fulfilled,Canceled;
         }
-
     }
     keys
     {

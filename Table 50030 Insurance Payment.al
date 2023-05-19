@@ -11,7 +11,6 @@ table 50030 "Insurance Payment"
         {
 
         }
-
         field(20; "Payment type"; Option)
         {
             Caption = 'Insurance payment type';
