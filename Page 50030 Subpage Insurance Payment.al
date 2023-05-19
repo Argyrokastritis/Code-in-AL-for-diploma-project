@@ -30,7 +30,7 @@ page 50030 "Subpage Insurance Payment"
                     var
                         "Main Insurance": Record "Main Insurance";
                     begin
-
+                        get("Main Insurance".Fee);
                         if amount > "Main Insurance".fee then begin
                             Error('The Monthle amount payment cannot be greater that the monthly fee');
                         end;
