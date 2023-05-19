@@ -34,11 +34,26 @@ page 50040 "Subpage Insurance Claim"
                     trigger OnValidate()
                     var
                         "Main Insurance": Record "Main Insurance";
+                        Total_Claim_of_Claims: Decimal;
                     begin
 
                         "Main Insurance".Get("Insurance No.");
                         if "claim amount" > "Main Insurance"."Max Benefits Limit" then begin
                             Error('The Monthly claimed amount cannot be grater than the Max Benefits Limit');
+                        end;
+                        //Message('filters:%1', rec.GetFilters);
+                        //error that hits when the Amount of amounts is grater than Amount that the insured will ever pay
+                        Total_Claim_of_Claims := 0;
+                        rec.SetRange("Insurance No.", rec."Insurance No.");
+                        if rec.find('-') then
+                            repeat
+                                Total_Claim_of_Claims += "claim amount";
+                            until rec.next <= 0;
+                        //Total_Amount_of_Amounts := rec.amount
+                        message('The Total Claim of the Claims is %1', Total_Claim_of_Claims);
+
+                        if Total_Claim_of_Claims > "Main Insurance"."Max Benefits Limit" then begin
+                            Error('The Total Amount of amounts cannot be greater than the insurance amount that the insured will ever pay');
                         end;
                     end;
                 }

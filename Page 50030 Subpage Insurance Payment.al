@@ -29,11 +29,27 @@ page 50030 "Subpage Insurance Payment"
                     trigger OnValidate()
                     var
                         "Main Insurance": Record "Main Insurance";
+                        Total_Amount_of_Amounts: Decimal;
                     begin
-                        "Main Insurance".get("Insurance No.");
+                        "Main Insurance".get(rec."Insurance No.");
                         if amount > "Main Insurance".fee then begin
                             Error('The Monthle amount payment cannot be greater that the monthly fee');
                         end;
+                        //Message('filters:%1', rec.GetFilters);
+                        //error that hits when the Amount of amounts is grater than Amount that the insured will ever pay
+                        Total_Amount_of_Amounts := 0;
+                        rec.SetRange("Insurance No.", rec."Insurance No.");
+                        if rec.find('-') then
+                            repeat
+                                Total_Amount_of_Amounts += amount;
+                            until rec.next <= 0;
+                        //Total_Amount_of_Amounts := rec.amount
+                        message('The Total Amount of the amounts is %1', Total_Amount_of_Amounts);
+
+                        if Total_Amount_of_Amounts > "Main Insurance".Amount then begin
+                            Error('The Total Amount of amounts cannot be greater than the insurance amount that the insured will ever pay');
+                        end;
+
                     end;
                 }
                 field("Insurance Date"; "Insurance Date")
