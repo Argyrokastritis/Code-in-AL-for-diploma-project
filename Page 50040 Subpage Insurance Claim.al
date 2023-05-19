@@ -35,8 +35,9 @@ page 50040 "Subpage Insurance Claim"
                     var
                         "Main Insurance": Record "Main Insurance";
                         Total_Claim_of_Claims: Decimal;
+                        trexon_amount: Decimal;
                     begin
-
+                        trexon_amount := rec."claim amount";
                         "Main Insurance".Get("Insurance No.");
                         if "claim amount" > "Main Insurance"."Max Benefits Limit" then begin
                             Error('The Monthly claimed amount cannot be grater than the Max Benefits Limit');
@@ -50,9 +51,10 @@ page 50040 "Subpage Insurance Claim"
                                 Total_Claim_of_Claims += "claim amount";
                             until rec.next <= 0;
                         //Total_Amount_of_Amounts := rec.amount
-                        message('The Total Claim of the Claims is %1', Total_Claim_of_Claims);
+                        Total_Claim_of_Claims := Total_Claim_of_Claims + trexon_amount;
+                        message('The Total Amount of the amounts is %1', Total_Claim_of_Claims);
 
-                        if Total_Claim_of_Claims > "Main Insurance"."Max Benefits Limit" then begin
+                        if Total_Claim_of_Claims > "Main Insurance".Amount then begin
                             Error('The Total Amount of amounts cannot be greater than the insurance amount that the insured will ever pay');
                         end;
                     end;

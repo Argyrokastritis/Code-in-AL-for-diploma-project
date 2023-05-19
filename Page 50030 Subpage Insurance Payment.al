@@ -30,7 +30,9 @@ page 50030 "Subpage Insurance Payment"
                     var
                         "Main Insurance": Record "Main Insurance";
                         Total_Amount_of_Amounts: Decimal;
+                        trexon_amount: Decimal;
                     begin
+                        trexon_amount := rec.amount;
                         "Main Insurance".get(rec."Insurance No.");
                         if amount > "Main Insurance".fee then begin
                             Error('The Monthle amount payment cannot be greater that the monthly fee');
@@ -43,7 +45,8 @@ page 50030 "Subpage Insurance Payment"
                             repeat
                                 Total_Amount_of_Amounts += amount;
                             until rec.next <= 0;
-                        //Total_Amount_of_Amounts := rec.amount
+
+                        Total_Amount_of_Amounts := Total_Amount_of_Amounts + trexon_amount;
                         message('The Total Amount of the amounts is %1', Total_Amount_of_Amounts);
 
                         if Total_Amount_of_Amounts > "Main Insurance".Amount then begin
