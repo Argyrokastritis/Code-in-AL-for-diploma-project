@@ -47,7 +47,7 @@ page 50030 "Subpage Insurance Payment"
                             until rec.next <= 0;
 
                         Total_Amount_of_Amounts := Total_Amount_of_Amounts + trexon_amount;
-                        message('The Total Amount of the amounts is %1', Total_Amount_of_Amounts);
+                        //message('The Total Amount of the amounts is %1', Total_Amount_of_Amounts);
 
                         if Total_Amount_of_Amounts > "Main Insurance".Amount then begin
                             Error('The Total Amount of amounts cannot be greater than the insurance amount that the insured will ever pay');
