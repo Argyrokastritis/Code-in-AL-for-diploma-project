@@ -13,14 +13,14 @@ pageextension 50070 "Customer actions" extends "Customer Card"
                 group(Behaviour)
                 {
                     Caption = 'Balance';
-                    field("Insurer's Payment Consistency"; "Insurer's Payment Consistency")
+                    field("Insured Payment Consistency"; "Insured Payment Consistency")
                     {
                         ApplicationArea = Basic, Suite;
                         Caption = 'Insurer Payment Consistency';
                         ToolTip = 'Specifies whether the insured person is a consistent payer or not';
 
                     }
-                    field("Insurer's attitude"; "Insurer's attitude")
+                    field("Insured attitude"; "Insured attitude")
                     {
                         ApplicationArea = Basic, Suite;
                         Caption = 'Insurer attitude';
@@ -29,19 +29,26 @@ pageextension 50070 "Customer actions" extends "Customer Card"
                         ToolTip = 'Specifies wheather the insurer attitude is good or bad';
 
                     }
-                    field("Insurer's job title"; "insured job titles")
+                    field("Insured job title"; "insured job titles")
                     {
                         ApplicationArea = Basic, Suite;
                         Caption = 'Insurer job title';
                         Style = Strong;
                         ToolTip = 'Specifies the job title of the insurer';
                     }
-                    field("Insurer character description"; "Insurer character description")
+                    field("Insured character description"; "Insured character description")
                     {
                         ApplicationArea = Basic, Suite;
                         Caption = 'Insurer character description';
                         Style = Standard;
                         ToolTip = 'Specifies the character of the insurer';
+                    }
+                    field("Isured company advertising"; "Insured company promotion")
+                    {
+                        ApplicationArea = Basic, Suite;
+                        Caption = 'Insured company advertising';
+                        Style = Standard;
+                        ToolTip = 'It specifies how many people the insured person has brought to the company by telling them that is a good insurance company';
                     }
                 }
             }

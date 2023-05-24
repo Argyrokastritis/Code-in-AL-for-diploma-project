@@ -257,7 +257,7 @@ report 50020 "Customer's insurance report"
 
 
                         //10% Discount for Attitude
-                        if Customer."Insurer's attitude" = Customer."Insurer's attitude"::"Very good attitude" then begin
+                        if Customer."Insured attitude" = Customer."Insured attitude"::"Very good attitude" then begin
                             Fee := Fee - 0.1 * Fee;
                             Amount := Amount - 0.1 * Amount;
                             //Message('%1', Fee);
@@ -271,7 +271,7 @@ report 50020 "Customer's insurance report"
                         //Message('%1', Fee);
 
                         //10% Discount for Attitude
-                        if Customer."Insurer's attitude" = Customer."Insurer's attitude"::"Very good attitude" then begin
+                        if Customer."Insured attitude" = Customer."Insured attitude"::"Very good attitude" then begin
                             Fee := Fee - 0.1 * Fee;
                             Amount := Amount - 0.1 * Amount;
                         end;
