@@ -356,20 +356,31 @@ report 50010 "Admin ec stats and ins report"
                         if Customer."Insured attitude" = Customer."Insured attitude"::"Very good attitude" then begin
                             Fee := Fee - 0.1 * Fee;
                             Amount := Amount - 0.1 * Amount;
-                            Message('%1', Fee);
+                            //Message('%1', Fee);
                         end;
-                    end;
 
-                    //Discount for High School teachers 
-                    if Customer."insured job titles" = Customer."insured job titles"::"High School Teacher" then begin
-                        Fee := Fee - 0.15 * Fee;
-                        Amount := Amount - 0.15 * Amount;
-                        //Message('%1', Fee);
-
-                        //10% Discount for Attitude
-                        if Customer."Insured attitude" = Customer."Insured attitude"::"Very good attitude" then begin
+                        //10% Discount for Advertising
+                        if Customer."Insured company promotion" = Customer."Insured company promotion"::"Brought more than 10 customers" then begin
                             Fee := Fee - 0.1 * Fee;
                             Amount := Amount - 0.1 * Amount;
+                        end;
+
+                        //Discount for High School teachers 
+                        if Customer."insured job titles" = Customer."insured job titles"::"High School Teacher" then begin
+                            Fee := Fee - 0.15 * Fee;
+                            Amount := Amount - 0.15 * Amount;
+                            //Message('%1', Fee);
+
+                            //10% Discount for Attitude
+                            if Customer."Insured attitude" = Customer."Insured attitude"::"Very good attitude" then begin
+                                Fee := Fee - 0.1 * Fee;
+                                Amount := Amount - 0.1 * Amount;
+                            end;
+                            //10% Discount for Advertising
+                            if Customer."Insured company promotion" = Customer."Insured company promotion"::"Brought more than 10 customers" then begin
+                                Fee := Fee - 0.1 * Fee;
+                                Amount := Amount - 0.1 * Amount;
+                            end;
                         end;
                     end;
                 end;

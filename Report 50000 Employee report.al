@@ -256,6 +256,11 @@ report 50000 "Employee insurances report"
                             Amount := Amount - 0.1 * Amount;
                             //Message('%1', Fee);
                         end;
+                        //10% Discount for Advertising
+                        if Customer."Insured company promotion" = Customer."Insured company promotion"::"Brought more than 10 customers" then begin
+                            Fee := Fee - 0.1 * Fee;
+                            Amount := Amount - 0.1 * Amount;
+                        end;
                     end;
 
                     //Discount for High School teachers 
@@ -266,6 +271,11 @@ report 50000 "Employee insurances report"
 
                         //10% Discount for Attitude
                         if Customer."Insured attitude" = Customer."Insured attitude"::"Very good attitude" then begin
+                            Fee := Fee - 0.1 * Fee;
+                            Amount := Amount - 0.1 * Amount;
+                        end;
+                        //10% Discount for Advertising
+                        if Customer."Insured company promotion" = Customer."Insured company promotion"::"Brought more than 10 customers" then begin
                             Fee := Fee - 0.1 * Fee;
                             Amount := Amount - 0.1 * Amount;
                         end;
