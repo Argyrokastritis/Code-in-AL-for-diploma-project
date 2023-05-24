@@ -194,36 +194,117 @@ report 50020 "Customer's insurance report"
             column(CustomerVat; Customer."VAT Registration No.") { }
 
             //Info of Insurance
-            column(No; "No.") { }
-            column(type; "type") { IncludeCaption = true; }
-            column(Insured_Name; "Insured Name") { IncludeCaption = true; }
-            column(Insured_No; "Insured No.") { IncludeCaption = true; }
-            column(Insurance_Date; "Insurance Date") { IncludeCaption = true; }
-            column(Insured_To; "Insured To") { }
-            column(Handler_no; "Handler no.") { }
-            column(Fee; "Fee") { }
-            column(Amount; "Amount") { }
-            column(Current_Claims_Amount; "Current Claims Amount") { }
-            column(Max_Benefits_Limit; "Max Benefits Limit") { }
-            column(State_of_Insurance; "State of Insurance") { }
+            column(No; "No.")
+            {
+
+            }
+            column(type; "type")
+            {
+                IncludeCaption = true;
+            }
+            column(Insured_Name; "Insured Name")
+            {
+                IncludeCaption = true;
+            }
+            column(Insured_No; "Insured No.")
+            {
+                IncludeCaption = true;
+            }
+            column(Insurance_Date; "Insurance Date")
+            {
+                IncludeCaption = true;
+            }
+            column(Insured_To; "Insured To")
+            {
+
+            }
+            column(Handler_no; "Handler no.")
+            {
+
+            }
+            column(Fee; "Fee")
+            {
+
+            }
+            column(Amount; "Amount")
+            {
+
+            }
+            column(Current_Claims_Amount; "Current Claims Amount")
+            {
+
+            }
+            column(Max_Benefits_Limit; "Max Benefits Limit")
+            {
+
+            }
+            column(State_of_Insurance; "State of Insurance")
+            {
+
+            }
             //column(Comment; Comments_Of_insurance.Comment) { }
 
             //Info of Insurance CPT's
-            column(Thl_Cpt; Thl_Cpt) { }
-            column(Fax_Cpt; Fax_Cpt) { }
-            column(Insurance_NoCPT; "Insurance_NoCPT") { }
-            column(Insurance_typeCPT; "Insurance_typeCPT") { }
-            column(Insured_NameCPT; "Insured_NameCPT") { }
-            column(Insured_NoCPT; "Insured_NoCPT") { }
-            column(Insurance_DateCPT; "Insurance_DateCPT") { }
-            column(Insured_ToCPT; "Insured_ToCPT") { }
-            column(Handler_noCPT; "Handler_noCPT") { }
-            column(Fee_CPT; "Fee_CPT") { }
-            column(AmountCPT; "AmountCPT") { }
-            column(Current_Claims_AmountCPT; "Current_Claims_AmountCPT") { }
-            column(Max_Benefits_LimitCPT; "Max_Benefits_LimitCPT") { }
-            column(State_of_InsuranceCPT; "State_of_InsuranceCPT") { }
-            column(UserComment; "UserComment") { }
+            column(Thl_Cpt; Thl_Cpt)
+            {
+
+            }
+            column(Fax_Cpt; Fax_Cpt)
+            {
+
+            }
+            column(Insurance_NoCPT; "Insurance_NoCPT")
+            {
+
+            }
+            column(Insurance_typeCPT; "Insurance_typeCPT")
+            {
+
+            }
+            column(Insured_NameCPT; "Insured_NameCPT")
+            {
+
+            }
+            column(Insured_NoCPT; "Insured_NoCPT")
+            {
+
+            }
+            column(Insurance_DateCPT; "Insurance_DateCPT")
+            {
+
+            }
+            column(Insured_ToCPT; "Insured_ToCPT")
+            {
+
+            }
+            column(Handler_noCPT; "Handler_noCPT")
+            {
+
+            }
+            column(Fee_CPT; "Fee_CPT")
+            {
+
+            }
+            column(AmountCPT; "AmountCPT")
+            {
+
+            }
+            column(Current_Claims_AmountCPT; "Current_Claims_AmountCPT")
+            {
+
+            }
+            column(Max_Benefits_LimitCPT; "Max_Benefits_LimitCPT")
+            {
+
+            }
+            column(State_of_InsuranceCPT; "State_of_InsuranceCPT")
+            {
+
+            }
+            column(UserComment; "UserComment")
+            {
+
+            }
 
             dataitem("Comments of insurance"; "Comments of insurance")
             {

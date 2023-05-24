@@ -17,15 +17,18 @@ page 50110 "Comments of insurance List"
                     Visible = false;
                     ApplicationArea = Basic;
                     Importance = Promoted;
+                    ToolTip = 'The No of the insurance in row';
                 }
                 field("type"; "Comment no.")
                 {
                     ApplicationArea = Basic;
                     Importance = Promoted;
+                    ToolTip = 'The type of the comment';
                 }
                 field(Comment; Comment)
                 {
                     ApplicationArea = ALL;
+                    ToolTip = 'The comment that describes it';
                 }
             }
         }
