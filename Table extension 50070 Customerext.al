@@ -23,7 +23,7 @@ tableextension 50070 "Customerext" extends Customer
         field(50150; "Insured company promotion"; Option)
         {
             Caption = 'Insured company promotion';
-            OptionMembers = "Brought less than 2 customers","Brought between 2 and 5 customers","Brought between 5 and 7 customers","Brought 7 to 10 customers","Brought more tan 10 customers";
+            OptionMembers = "Brought less than 2 customers","Brought between 2 and 5 customers","Brought between 5 and 7 customers","Brought between 7 and 10 customers","Brought more tan 10 customers";
         }
     }
 }
