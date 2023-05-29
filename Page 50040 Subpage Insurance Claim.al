@@ -52,7 +52,7 @@ page 50040 "Subpage Insurance Claim"
                             until rec.next <= 0;
                         //Total_Amount_of_Amounts := rec.amount
                         Total_Claim_of_Claims := Total_Claim_of_Claims + trexon_amount;
-                        message('The Total Amount of the amounts is %1', Total_Claim_of_Claims);
+                        //message('The Total Amount of the amounts is %1', Total_Claim_of_Claims);
 
                         if Total_Claim_of_Claims > "Main Insurance"."Max Benefits Limit" then begin
                             Error('The Total Amount of amounts cannot be greater than the insurance amount that the insured will ever pay');
